@@ -13,10 +13,8 @@ Hier findest du ein kleines Tutorial zum Einstieg mit CCL.
 # Hello World-Programm
 Ein einfaches Hello World-Programm in CCL sieht aktuell so aus:
 
-`
-#include ccl/std/Console.cl2
-println("Hello World");
-`
+    #include ccl/std/Console.cl2
+    println("Hello World");
 
 # Ausführung
 Jetzt ist natürlich die Frage, wie du das Programm ausführen kannst. Dazu solltest du dir zuerst dieses Repository herunterladen. Darin findest du die Datei **helloWorld.cl2**, die den Code von oben enthält.
