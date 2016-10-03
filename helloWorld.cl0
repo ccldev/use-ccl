@@ -1,0 +1,44 @@
+put 0
+parse I
+reserve println
+load println
+swap
+store
+put 0
+parse I
+reserve read
+load read
+swap
+store
+newscope
+put java.lang.System
+parse N
+reserve System
+load System
+swap
+store
+load System
+readval
+get out
+get println
+load println
+swap
+store
+put java.util.Scanner
+parse N
+load System
+readval
+get in
+swap
+invoke 1
+get nextLine
+load read
+swap
+store
+oldscope
+load println
+readval
+put Hello World
+parse S
+swap
+invoke 1

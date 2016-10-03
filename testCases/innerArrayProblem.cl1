@@ -1,0 +1,151 @@
+G:I0
+
+V1::println:#
+G:I0
+
+V1::read:#
+{
+G:Njava.lang.System
+
+V1::System:#
+G:VSystem
+G:~:out
+G:~:println
+
+V0::println:#
+G:Njava.util.Scanner
+G:VSystem
+G:~:in
+
+S
+;:invoke 1
+G:~:nextLine
+
+V0::read:#
+
+
+}
+G:Vprintln
+G:A0
+D
+G:~:push
+G:I1
+
+S
+;:invoke 1
+P
+D
+G:~:push
+G:I2
+
+S
+;:invoke 1
+P
+D
+G:~:push
+G:I3
+
+S
+;:invoke 1
+P
+D
+G:~:push
+G:A0
+D
+G:~:push
+G:I4
+
+S
+;:invoke 1
+P
+D
+G:~:push
+G:I5
+
+S
+;:invoke 1
+P
+D
+G:~:push
+G:I6
+
+S
+;:invoke 1
+P
+
+
+S
+;:invoke 1
+P
+D
+G:~:push
+G:A0
+D
+G:~:push
+G:A0
+D
+G:~:push
+G:I7
+
+S
+;:invoke 1
+P
+D
+G:~:push
+G:I8
+
+S
+;:invoke 1
+P
+D
+G:~:push
+G:I9
+
+S
+;:invoke 1
+P
+
+
+S
+;:invoke 1
+P
+D
+G:~:push
+G:A0
+D
+G:~:push
+G:I10
+
+S
+;:invoke 1
+P
+D
+G:~:push
+G:I11
+
+S
+;:invoke 1
+P
+D
+G:~:push
+G:I12
+
+S
+;:invoke 1
+P
+
+
+S
+;:invoke 1
+P
+
+
+S
+;:invoke 1
+P
+
+
+S
+;:invoke 1
+
+

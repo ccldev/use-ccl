@@ -1,0 +1,156 @@
+put 0
+parse I
+reserve println
+load println
+swap
+store
+put 0
+parse I
+reserve read
+load read
+swap
+store
+newscope
+put java.lang.System
+parse N
+reserve System
+load System
+swap
+store
+load System
+readval
+get out
+get println
+load println
+swap
+store
+put java.util.Scanner
+parse N
+load System
+readval
+get in
+swap
+invoke 1
+get nextLine
+load read
+swap
+store
+oldscope
+load println
+readval
+put 0
+parse A
+duplicate
+get push
+put 1
+parse I
+swap
+invoke 1
+pop
+duplicate
+get push
+put 2
+parse I
+swap
+invoke 1
+pop
+duplicate
+get push
+put 3
+parse I
+swap
+invoke 1
+pop
+duplicate
+get push
+put 0
+parse A
+duplicate
+get push
+put 4
+parse I
+swap
+invoke 1
+pop
+duplicate
+get push
+put 5
+parse I
+swap
+invoke 1
+pop
+duplicate
+get push
+put 6
+parse I
+swap
+invoke 1
+pop
+swap
+invoke 1
+pop
+duplicate
+get push
+put 0
+parse A
+duplicate
+get push
+put 0
+parse A
+duplicate
+get push
+put 7
+parse I
+swap
+invoke 1
+pop
+duplicate
+get push
+put 8
+parse I
+swap
+invoke 1
+pop
+duplicate
+get push
+put 9
+parse I
+swap
+invoke 1
+pop
+swap
+invoke 1
+pop
+duplicate
+get push
+put 0
+parse A
+duplicate
+get push
+put 10
+parse I
+swap
+invoke 1
+pop
+duplicate
+get push
+put 11
+parse I
+swap
+invoke 1
+pop
+duplicate
+get push
+put 12
+parse I
+swap
+invoke 1
+pop
+swap
+invoke 1
+pop
+swap
+invoke 1
+pop
+swap
+invoke 1

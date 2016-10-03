@@ -1,0 +1,37 @@
+put java.lang.System
+parse N
+reserve System
+load System
+swap
+store
+put java.util.Scanner
+parse N
+reserve Scanner
+load Scanner
+swap
+store
+load Scanner
+readval
+load System
+readval
+get in
+swap
+invoke 1
+reserve scanner
+load scanner
+swap
+store
+load scanner
+readval
+get nextLine
+reserve read
+load read
+swap
+store
+load read
+readval
+invoke 0
+reserve test
+load test
+swap
+store
