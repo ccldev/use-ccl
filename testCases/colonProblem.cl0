@@ -1,0 +1,26 @@
+put java.util.Scanner
+parse N
+put java.lang.System
+parse N
+get in
+swap
+invoke 1
+get nextLine
+invoke 0
+reserve in
+load in
+swap
+store
+put java.lang.System
+parse N
+get out
+get println
+put Eingabe:	
+parse S
+get concat
+load in
+readval
+swap
+invoke 1
+swap
+invoke 1
