@@ -1,0 +1,75 @@
+put 0
+parse I
+reserve println
+load println
+swap
+store
+put 0
+parse I
+reserve read
+load read
+swap
+store
+newscope
+put java.lang.System
+parse N
+reserve System
+load System
+swap
+store
+load System
+readval
+get out
+get println
+load println
+swap
+store
+put java.util.Scanner
+parse N
+load System
+readval
+get in
+swap
+invoke 1
+get nextLine
+load read
+swap
+store
+oldscope
+put 0
+parse A
+duplicate
+get push
+put 123/456
+parse S
+swap
+put home
+parse S
+swap
+invoke 2
+pop
+duplicate
+get push
+put 321/654
+parse S
+swap
+put other
+parse S
+swap
+invoke 2
+pop
+reserve array
+load array
+swap
+store
+reserve func
+load func
+put __func1__.cl0
+parse M
+store
+load func
+readval
+load array
+readval
+swap
+invoke 1
