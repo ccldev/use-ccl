@@ -1,0 +1,109 @@
+G:I0
+
+V1::println:#
+G:I0
+
+V1::read:#
+{
+G:Njava.lang.System
+
+V1::System:#
+G:VSystem
+G:~:out
+G:~:println
+
+V0::println:#
+G:Njava.util.Scanner
+G:VSystem
+G:~:in
+
+S
+;:invoke 1
+G:~:nextLine
+
+V0::read:#
+
+
+}
+G:Njava.awt.Point
+G:I1
+
+S
+G:I2
+
+S
+;:invoke 2
+
+V1::point:#
+G:Vprintln
+G:Vpoint
+G:~:x
+G:~:add
+G:Vpoint
+G:~:y
+
+S
+;:invoke 1
+
+S
+;:invoke 1
+
+V1::pointAdder:M__func1__.cl0
+G:Vpoint
+G:~:intern
+G:~:setProperty
+G:Sadd
+
+S
+G:VpointAdder
+G:~:bind
+G:Vpoint
+
+S
+;:invoke 1
+G:~:intern
+
+S
+;:invoke 2
+
+G:Vprintln
+G:Vpoint
+G:~:add
+G:Vpoint
+
+S
+;:invoke 1
+
+S
+;:invoke 1
+
+G:Njava.awt.Dimension
+G:I800
+
+S
+G:I600
+
+S
+;:invoke 2
+
+V1::dimension:#
+G:Vprintln
+G:SFollowing output should be ccl.vm.core.expr.FloatExpression
+
+S
+;:invoke 1
+
+G:Vprintln
+G:Vdimension
+G:~:getWidth
+;:invoke 0
+G:~:intern
+G:~:getClass
+;:invoke 0
+G:~:getName
+;:invoke 0
+
+S
+;:invoke 1
+
+

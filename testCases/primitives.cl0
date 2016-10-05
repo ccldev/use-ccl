@@ -1,0 +1,129 @@
+put 0
+parse I
+reserve println
+load println
+swap
+store
+put 0
+parse I
+reserve read
+load read
+swap
+store
+newscope
+put java.lang.System
+parse N
+reserve System
+load System
+swap
+store
+load System
+readval
+get out
+get println
+load println
+swap
+store
+put java.util.Scanner
+parse N
+load System
+readval
+get in
+swap
+invoke 1
+get nextLine
+load read
+swap
+store
+oldscope
+put java.awt.Point
+parse N
+put 1
+parse I
+swap
+put 2
+parse I
+swap
+invoke 2
+reserve point
+load point
+swap
+store
+load println
+readval
+load point
+readval
+get x
+get add
+load point
+readval
+get y
+swap
+invoke 1
+swap
+invoke 1
+reserve pointAdder
+load pointAdder
+put __func1__.cl0
+parse M
+store
+load point
+readval
+get intern
+get setProperty
+put add
+parse S
+swap
+load pointAdder
+readval
+get bind
+load point
+readval
+swap
+invoke 1
+get intern
+swap
+invoke 2
+load println
+readval
+load point
+readval
+get add
+load point
+readval
+swap
+invoke 1
+swap
+invoke 1
+put java.awt.Dimension
+parse N
+put 800
+parse I
+swap
+put 600
+parse I
+swap
+invoke 2
+reserve dimension
+load dimension
+swap
+store
+load println
+readval
+put Following output should be ccl.vm.core.expr.FloatExpression
+parse S
+swap
+invoke 1
+load println
+readval
+load dimension
+readval
+get getWidth
+invoke 0
+get intern
+get getClass
+invoke 0
+get getName
+invoke 0
+swap
+invoke 1
