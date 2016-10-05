@@ -1,0 +1,85 @@
+G:I0
+
+V1::println:#
+G:I0
+
+V1::read:#
+{
+G:Njava.lang.System
+
+V1::System:#
+G:VSystem
+G:~:out
+G:~:println
+
+V0::println:#
+G:Njava.util.Scanner
+G:VSystem
+G:~:in
+
+S
+;:invoke 1
+G:~:nextLine
+
+V0::read:#
+
+
+}
+V1::struct:M__func1__.cl0
+G:Vstruct
+G:A0
+D
+G:~:push
+G:SfirstName
+
+S
+;:invoke 1
+P
+D
+G:~:push
+G:SlastName
+
+S
+;:invoke 1
+P
+D
+G:~:push
+G:Sage
+
+S
+;:invoke 1
+P
+
+
+S
+;:invoke 1
+
+V1::Person:#
+G:VPerson
+G:SHans
+
+S
+G:SMüller
+
+S
+G:I30
+
+S
+;:invoke 3
+
+V1::hans:#
+G:Vprintln
+G:~:for
+G:Vhans
+
+S
+;:invoke 1
+
+G:Vprintln
+G:Vhans
+G:~:lastName
+
+S
+;:invoke 1
+
+
