@@ -1,0 +1,100 @@
+V1::Vector2:M__func1__.cl0
+G:I0
+
+V1::println:#
+G:I0
+
+V1::read:#
+{
+G:Njava.lang.System
+
+V1::System:#
+G:VSystem
+G:~:out
+G:~:println
+
+V0::println:#
+G:Njava.util.Scanner
+G:VSystem
+G:~:in
+
+S
+;:invoke 1
+G:~:nextLine
+
+V0::read:#
+
+
+}
+G:VVector2
+G:I1
+
+S
+G:I5
+
+S
+;:invoke 2
+
+V1::vec1:#
+G:VVector2
+G:I6
+
+S
+G:I8
+
+S
+;:invoke 2
+
+V1::vec2:#
+G:Vprintln
+G:SExpect\: 7;13
+
+S
+;:invoke 1
+
+G:Vprintln
+G:Vvec1
+G:~:add
+G:Vvec2
+
+S
+;:invoke 1
+
+S
+;:invoke 1
+
+G:Vprintln
+G:SExpect\: -5;-3
+
+S
+;:invoke 1
+
+G:Vprintln
+G:Vvec1
+G:~:sub
+G:Vvec2
+
+S
+;:invoke 1
+
+S
+;:invoke 1
+
+G:Vprintln
+G:SExpect\: 6;40
+
+S
+;:invoke 1
+
+G:Vprintln
+G:Vvec1
+G:~:mul
+G:Vvec2
+
+S
+;:invoke 1
+
+S
+;:invoke 1
+
+
