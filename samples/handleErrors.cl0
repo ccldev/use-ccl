@@ -103,94 +103,72 @@ load read
 swap
 store
 oldscope
-put java.awt.Point
-parse N
+load println
+readval
+put Expected: error output.
+parse S
+swap
+invoke 1
 put 1
 parse I
-swap
-put 2
+get add
+put 5
 parse I
 swap
-invoke 2
-reserve point
-load point
+invoke 1
+reserve working
+load working
 swap
 store
-load println
+load working
 readval
-load point
-readval
-get x
-get add
-load point
-readval
-get y
-swap
-invoke 1
-swap
-invoke 1
-reserve pointAdder
-load pointAdder
-put __func4__.cl0
-parse M
-store
-load point
-readval
-get intern
-get setProperty
-put add
+get type
+get equals
+put error
 parse S
 swap
-load pointAdder
-readval
-get bind
-load point
-readval
-swap
 invoke 1
-get intern
-swap
-invoke 2
+if
+goto _if_4_
+goto _if_4_end_
+mark _if_4_
 load println
 readval
-load point
-readval
-get add
-load point
-readval
+put UNEXPECTED!!!!
+parse S
 swap
 invoke 1
-swap
-invoke 1
-put java.awt.Dimension
-parse N
-put 800
-parse I
-swap
-put 600
-parse I
-swap
-invoke 2
-reserve dimension
-load dimension
+mark _if_4_end_
+load undefined
+readval
+get someProperty
+reserve err
+load err
 swap
 store
+load err
+readval
+get type
+get equals
+put error
+parse S
+swap
+invoke 1
+if
+goto _if_5_
+goto _if_5_end_
+mark _if_5_
 load println
 readval
-put Following output should be ccl.vm.core.expr.FloatExpression
+put EXPECTED :)
 parse S
 swap
 invoke 1
 load println
 readval
-load dimension
+load err
 readval
-get getWidth
-invoke 0
-get intern
-get getClass
-invoke 0
-get getName
-invoke 0
+get data
 swap
 invoke 1
+mark _if_5_end_

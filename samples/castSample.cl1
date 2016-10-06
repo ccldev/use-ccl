@@ -1,30 +1,3 @@
-G:I0
-
-V1::println:#
-G:I0
-
-V1::read:#
-{
-G:Njava.lang.System
-
-V1::System:#
-G:VSystem
-G:~:out
-G:~:println
-
-V0::println:#
-G:Njava.util.Scanner
-G:VSystem
-G:~:in
-
-S
-;:invoke 1
-G:~:nextLine
-
-V0::read:#
-
-
-}
 G:A0
 D
 G:~:push
@@ -69,6 +42,33 @@ V1::false:#
 V1::float:M__func1__.cl0
 V1::integer:M__func2__.cl0
 V1::boolean:M__func3__.cl0
+G:I0
+
+V1::println:#
+G:I0
+
+V1::read:#
+{
+G:Njava.lang.System
+
+V1::System:#
+G:VSystem
+G:~:out
+G:~:println
+
+V0::println:#
+G:Njava.util.Scanner
+G:VSystem
+G:~:in
+
+S
+;:invoke 1
+G:~:nextLine
+
+V0::read:#
+
+
+}
 G:Vprintln
 G:SExpected\: integer, float, false, boolean
 

@@ -1,3 +1,47 @@
+G:A0
+D
+G:~:push
+G:Njava.lang.Boolean
+
+S
+G:SBoolean
+S
+;:invoke 2
+P
+D
+G:~:push
+G:Njava.lang.Long
+
+S
+G:SLong
+S
+;:invoke 2
+P
+D
+G:~:push
+G:Njava.lang.Double
+
+S
+G:SDouble
+S
+;:invoke 2
+P
+
+
+V1::natives:#
+G:Vnatives
+G:~:Boolean
+G:~:TRUE
+
+V1::true:#
+G:Vnatives
+G:~:Boolean
+G:~:FALSE
+
+V1::false:#
+V1::float:M__func1__.cl0
+V1::integer:M__func2__.cl0
+V1::boolean:M__func3__.cl0
 G:I0
 
 V1::println:#
@@ -25,7 +69,7 @@ V0::read:#
 
 
 }
-V1::printHello:M__func1__.cl0
+V1::printHello:M__func4__.cl0
 G:VprintHello
 ;:invoke 0
 

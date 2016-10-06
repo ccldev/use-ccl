@@ -1,8 +1,8 @@
-java -jar ccl0.2.7.jar -compile %1
+java -jar ccl0.2.8.jar -compile %1
 if errorlevel 1 goto end
 set fname=%1
 set fname=%fname:~0,-1%0
-java -jar ccl0.2.7.jar %fname%
+java -jar ccl0.2.8.jar %fname%
 if errorlevel 1 goto end
 
 :end
