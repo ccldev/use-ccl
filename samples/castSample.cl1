@@ -1,0 +1,121 @@
+G:I0
+
+V1::println:#
+G:I0
+
+V1::read:#
+{
+G:Njava.lang.System
+
+V1::System:#
+G:VSystem
+G:~:out
+G:~:println
+
+V0::println:#
+G:Njava.util.Scanner
+G:VSystem
+G:~:in
+
+S
+;:invoke 1
+G:~:nextLine
+
+V0::read:#
+
+
+}
+G:A0
+D
+G:~:push
+G:Njava.lang.Boolean
+
+S
+G:SBoolean
+S
+;:invoke 2
+P
+D
+G:~:push
+G:Njava.lang.Long
+
+S
+G:SLong
+S
+;:invoke 2
+P
+D
+G:~:push
+G:Njava.lang.Double
+
+S
+G:SDouble
+S
+;:invoke 2
+P
+
+
+V1::natives:#
+G:Vnatives
+G:~:Boolean
+G:~:TRUE
+
+V1::true:#
+G:Vnatives
+G:~:Boolean
+G:~:FALSE
+
+V1::false:#
+V1::float:M__func1__.cl0
+V1::integer:M__func2__.cl0
+V1::boolean:M__func3__.cl0
+G:Vprintln
+G:SExpected\: integer, float, false, boolean
+
+S
+;:invoke 1
+
+G:Vprintln
+G:Vinteger
+G:S14
+
+S
+;:invoke 1
+G:~:type
+
+S
+;:invoke 1
+
+G:Vprintln
+G:Vfloat
+G:S12.34
+
+S
+;:invoke 1
+G:~:type
+
+S
+;:invoke 1
+
+G:Vprintln
+G:Vboolean
+G:Sljöhn
+
+S
+;:invoke 1
+
+S
+;:invoke 1
+
+G:Vprintln
+G:Vboolean
+G:Strue
+
+S
+;:invoke 1
+G:~:type
+
+S
+;:invoke 1
+
+
