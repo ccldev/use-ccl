@@ -30,6 +30,16 @@ parse S
 swap
 invoke 2
 pop
+duplicate
+get push
+put ccl.vm.core.ErrorMarker
+parse N
+swap
+put Error
+parse S
+swap
+invoke 2
+pop
 reserve natives
 load natives
 swap
@@ -63,6 +73,11 @@ store
 reserve boolean
 load boolean
 put __func3__.cl0
+parse M
+store
+reserve error
+load error
+put __func4__.cl0
 parse M
 store
 put 0
@@ -131,7 +146,7 @@ swap
 store
 reserve func
 load func
-put __func4__.cl0
+put __func5__.cl0
 parse M
 store
 load func
@@ -140,3 +155,4 @@ load array
 readval
 swap
 invoke 1
+pop

@@ -30,6 +30,16 @@ parse S
 swap
 invoke 2
 pop
+duplicate
+get push
+put ccl.vm.core.ErrorMarker
+parse N
+swap
+put Error
+parse S
+swap
+invoke 2
+pop
 reserve natives
 load natives
 swap
@@ -63,6 +73,11 @@ store
 reserve boolean
 load boolean
 put __func3__.cl0
+parse M
+store
+reserve error
+load error
+put __func4__.cl0
 parse M
 store
 put 0
@@ -109,6 +124,7 @@ put Expected: error output.
 parse S
 swap
 invoke 1
+pop
 put 1
 parse I
 get add
@@ -129,16 +145,17 @@ parse S
 swap
 invoke 1
 if
-goto _if_4_
-goto _if_4_end_
-mark _if_4_
+goto _if_5_
+goto _if_5_end_
+mark _if_5_
 load println
 readval
 put UNEXPECTED!!!!
 parse S
 swap
 invoke 1
-mark _if_4_end_
+pop
+mark _if_5_end_
 load undefined
 readval
 get someProperty
@@ -155,15 +172,16 @@ parse S
 swap
 invoke 1
 if
-goto _if_5_
-goto _if_5_end_
-mark _if_5_
+goto _if_6_
+goto _if_6_end_
+mark _if_6_
 load println
 readval
 put EXPECTED :)
 parse S
 swap
 invoke 1
+pop
 load println
 readval
 load err
@@ -171,4 +189,5 @@ readval
 get data
 swap
 invoke 1
-mark _if_5_end_
+pop
+mark _if_6_end_

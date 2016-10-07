@@ -30,6 +30,16 @@ parse S
 swap
 invoke 2
 pop
+duplicate
+get push
+put ccl.vm.core.ErrorMarker
+parse N
+swap
+put Error
+parse S
+swap
+invoke 2
+pop
 reserve natives
 load natives
 swap
@@ -63,6 +73,11 @@ store
 reserve boolean
 load boolean
 put __func3__.cl0
+parse M
+store
+reserve error
+load error
+put __func4__.cl0
 parse M
 store
 put 0
@@ -129,9 +144,10 @@ swap
 invoke 1
 swap
 invoke 1
+pop
 reserve pointAdder
 load pointAdder
-put __func4__.cl0
+put __func5__.cl0
 parse M
 store
 load point
@@ -151,6 +167,7 @@ invoke 1
 get intern
 swap
 invoke 2
+pop
 load println
 readval
 load point
@@ -162,6 +179,7 @@ swap
 invoke 1
 swap
 invoke 1
+pop
 put java.awt.Dimension
 parse N
 put 800
@@ -181,6 +199,7 @@ put Following output should be ccl.vm.core.expr.FloatExpression
 parse S
 swap
 invoke 1
+pop
 load println
 readval
 load dimension
@@ -194,3 +213,4 @@ get getName
 invoke 0
 swap
 invoke 1
+pop

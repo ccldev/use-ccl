@@ -1,18 +1,34 @@
 var natives = [
 	Boolean: (java.lang.Boolean),
 	Long: (java.lang.Long),
-	Double: (java.lang.Double)
+	Double: (java.lang.Double),
+	Error: (ccl.vm.core.ErrorMarker)
 ];
 
 var true = natives.Boolean.TRUE;
 var false = natives.Boolean.FALSE;
 
 def float(val){
-	return natives.Double.parseDouble(val.toString());
+	native(){
+		G:Vval
+		;:parse F
+		R:~
+	}
 }
 def integer(val){
-	return natives.Long.parseLong(val.toString());
+	native(){
+		G:Vval
+		;:parse I
+		R:~
+	}
 }
 def boolean(val){
-	return natives.Boolean.parseBoolean(val.toString());
+	native(){
+		G:Vval
+		;:parse B
+		R:~
+	}
+}
+def error(val){
+	return natives.Error(val);
 }

@@ -30,6 +30,16 @@ parse S
 swap
 invoke 2
 pop
+duplicate
+get push
+put ccl.vm.core.ErrorMarker
+parse N
+swap
+put Error
+parse S
+swap
+invoke 2
+pop
 reserve natives
 load natives
 swap
@@ -63,6 +73,11 @@ store
 reserve boolean
 load boolean
 put __func3__.cl0
+parse M
+store
+reserve error
+load error
+put __func4__.cl0
 parse M
 store
 put 0
@@ -105,23 +120,25 @@ store
 oldscope
 reserve normal
 load normal
-put __func4__.cl0
+put __func5__.cl0
 parse M
 store
 reserve withDefaults
 load withDefaults
-put __func5__.cl0
+put __func6__.cl0
 parse M
 store
 load normal
 readval
 invoke 0
+pop
 load normal
 readval
 put 1
 parse I
 swap
 invoke 1
+pop
 load normal
 readval
 put 1
@@ -131,15 +148,18 @@ put 2
 parse I
 swap
 invoke 2
+pop
 load withDefaults
 readval
 invoke 0
+pop
 load withDefaults
 readval
 put Hans
 parse S
 swap
 invoke 1
+pop
 load withDefaults
 readval
 put Susi
@@ -149,3 +169,4 @@ put Hi
 parse S
 swap
 invoke 2
+pop

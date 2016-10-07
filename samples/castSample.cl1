@@ -26,6 +26,15 @@ G:SDouble
 S
 ;:invoke 2
 P
+D
+G:~:push
+G:Nccl.vm.core.ErrorMarker
+
+S
+G:SError
+S
+;:invoke 2
+P
 
 
 V1::natives:#
@@ -42,6 +51,7 @@ V1::false:#
 V1::float:M__func1__.cl0
 V1::integer:M__func2__.cl0
 V1::boolean:M__func3__.cl0
+V1::error:M__func4__.cl0
 G:I0
 
 V1::println:#
@@ -75,6 +85,7 @@ G:SExpected\: integer, float, false, boolean
 S
 ;:invoke 1
 
+P
 G:Vprintln
 G:Vinteger
 G:S14
@@ -86,6 +97,7 @@ G:~:type
 S
 ;:invoke 1
 
+P
 G:Vprintln
 G:Vfloat
 G:S12.34
@@ -97,6 +109,7 @@ G:~:type
 S
 ;:invoke 1
 
+P
 G:Vprintln
 G:Vboolean
 G:Sljöhn
@@ -107,6 +120,7 @@ S
 S
 ;:invoke 1
 
+P
 G:Vprintln
 G:Vboolean
 G:Strue
@@ -118,4 +132,5 @@ G:~:type
 S
 ;:invoke 1
 
+P
 

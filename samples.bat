@@ -5,3 +5,4 @@ call ccl samples/lookupSample.cl2
 call ccl samples/castSample.cl2
 call ccl samples/defaultParamSample.cl2
 call ccl samples/handleErrors.cl2
+call ccl samples/throwSample.cl2
