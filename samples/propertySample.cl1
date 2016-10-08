@@ -1,0 +1,192 @@
+G:A0
+D
+G:~:push
+G:Njava.lang.Boolean
+
+S
+G:SBoolean
+S
+;:invoke 2
+P
+D
+G:~:push
+G:Njava.lang.Long
+
+S
+G:SLong
+S
+;:invoke 2
+P
+D
+G:~:push
+G:Njava.lang.Double
+
+S
+G:SDouble
+S
+;:invoke 2
+P
+D
+G:~:push
+G:Nccl.vm.core.ErrorMarker
+
+S
+G:SError
+S
+;:invoke 2
+P
+
+
+V1::natives:#
+G:Vnatives
+G:~:Boolean
+G:~:TRUE
+
+V1::true:#
+G:Vnatives
+G:~:Boolean
+G:~:FALSE
+
+V1::false:#
+V1::float:M__func1__.cl0
+V1::integer:M__func2__.cl0
+V1::boolean:M__func3__.cl0
+V1::error:M__func4__.cl0
+G:I0
+
+V1::println:#
+G:I0
+
+V1::read:#
+{
+G:Njava.lang.System
+
+V1::System:#
+G:VSystem
+G:~:out
+G:~:println
+
+V0::println:#
+G:Njava.util.Scanner
+G:VSystem
+G:~:in
+
+S
+;:invoke 1
+G:~:nextLine
+
+V0::read:#
+
+
+}
+V1::struct:M__func5__.cl0
+G:Vstruct
+G:A0
+D
+G:~:push
+G:Svorwahl
+
+S
+;:invoke 1
+P
+D
+G:~:push
+G:Shaupt
+
+S
+;:invoke 1
+P
+
+
+S
+;:invoke 1
+
+V1::Number:#
+G:VNumber
+G:S12345
+
+S
+G:S67890
+
+S
+;:invoke 2
+
+V1::num:#
+G:Vnum
+G:~:properties
+
+V1::props:#
+G:I0
+
+V1::i:#
+#:_while_2_start:mark
+G:Vi
+G:~:lss
+G:Vprops
+G:~:length
+;:invoke 0
+
+S
+;:invoke 1
+
+?:~
+#:_while_2_continue:goto
+#:_while_2_end:goto
+#:_while_2_continue:mark
+{
+G:Vprops
+G:~:get
+G:Vi
+
+S
+;:invoke 1
+
+V1::toGet:#
+G:Vnum
+G:VtoGet
+
+S
+;:invoke 1
+
+V1::value:#
+G:Vprintln
+G:Njava.lang.String
+G:~:valueOf
+G:VtoGet
+
+S
+;:invoke 1
+G:~:concat
+G:S\:\t
+
+S
+;:invoke 1
+G:~:concat
+G:Njava.lang.String
+G:~:valueOf
+G:Vvalue
+
+S
+;:invoke 1
+
+S
+;:invoke 1
+
+S
+;:invoke 1
+
+P
+G:Vi
+G:~:add
+G:I1
+
+S
+;:invoke 1
+
+V0::i:#
+
+
+}
+#:_while_2_start:goto
+#:_while_2_end:mark
+

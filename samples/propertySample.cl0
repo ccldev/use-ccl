@@ -1,0 +1,251 @@
+put 0
+parse A
+duplicate
+get push
+put java.lang.Boolean
+parse N
+swap
+put Boolean
+parse S
+swap
+invoke 2
+pop
+duplicate
+get push
+put java.lang.Long
+parse N
+swap
+put Long
+parse S
+swap
+invoke 2
+pop
+duplicate
+get push
+put java.lang.Double
+parse N
+swap
+put Double
+parse S
+swap
+invoke 2
+pop
+duplicate
+get push
+put ccl.vm.core.ErrorMarker
+parse N
+swap
+put Error
+parse S
+swap
+invoke 2
+pop
+reserve natives
+load natives
+swap
+store
+load natives
+readval
+get Boolean
+get TRUE
+reserve true
+load true
+swap
+store
+load natives
+readval
+get Boolean
+get FALSE
+reserve false
+load false
+swap
+store
+reserve float
+load float
+put __func1__.cl0
+parse M
+store
+reserve integer
+load integer
+put __func2__.cl0
+parse M
+store
+reserve boolean
+load boolean
+put __func3__.cl0
+parse M
+store
+reserve error
+load error
+put __func4__.cl0
+parse M
+store
+put 0
+parse I
+reserve println
+load println
+swap
+store
+put 0
+parse I
+reserve read
+load read
+swap
+store
+newscope
+put java.lang.System
+parse N
+reserve System
+load System
+swap
+store
+load System
+readval
+get out
+get println
+load println
+swap
+store
+put java.util.Scanner
+parse N
+load System
+readval
+get in
+swap
+invoke 1
+get nextLine
+load read
+swap
+store
+oldscope
+reserve struct
+load struct
+put __func5__.cl0
+parse M
+store
+load struct
+readval
+put 0
+parse A
+duplicate
+get push
+put vorwahl
+parse S
+swap
+invoke 1
+pop
+duplicate
+get push
+put haupt
+parse S
+swap
+invoke 1
+pop
+swap
+invoke 1
+reserve Number
+load Number
+swap
+store
+load Number
+readval
+put 12345
+parse S
+swap
+put 67890
+parse S
+swap
+invoke 2
+reserve num
+load num
+swap
+store
+load num
+readval
+get properties
+reserve props
+load props
+swap
+store
+put 0
+parse I
+reserve i
+load i
+swap
+store
+mark _while_2_start
+load i
+readval
+get lss
+load props
+readval
+get length
+invoke 0
+swap
+invoke 1
+if
+goto _while_2_continue
+goto _while_2_end
+mark _while_2_continue
+newscope
+load props
+readval
+get get
+load i
+readval
+swap
+invoke 1
+reserve toGet
+load toGet
+swap
+store
+load num
+readval
+load toGet
+readval
+swap
+invoke 1
+reserve value
+load value
+swap
+store
+load println
+readval
+put java.lang.String
+parse N
+get valueOf
+load toGet
+readval
+swap
+invoke 1
+get concat
+put :	
+parse S
+swap
+invoke 1
+get concat
+put java.lang.String
+parse N
+get valueOf
+load value
+readval
+swap
+invoke 1
+swap
+invoke 1
+swap
+invoke 1
+pop
+load i
+readval
+get add
+put 1
+parse I
+swap
+invoke 1
+load i
+swap
+store
+oldscope
+goto _while_2_start
+mark _while_2_end
