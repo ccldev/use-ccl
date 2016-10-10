@@ -2,36 +2,6 @@ put 0
 parse A
 duplicate
 get push
-put java.lang.Boolean
-parse N
-swap
-put Boolean
-parse S
-swap
-invoke 2
-pop
-duplicate
-get push
-put java.lang.Long
-parse N
-swap
-put Long
-parse S
-swap
-invoke 2
-pop
-duplicate
-get push
-put java.lang.Double
-parse N
-swap
-put Double
-parse S
-swap
-invoke 2
-pop
-duplicate
-get push
 put ccl.vm.core.ErrorMarker
 parse N
 swap
@@ -44,40 +14,14 @@ reserve natives
 load natives
 swap
 store
-load natives
-readval
-get Boolean
-get TRUE
-reserve true
-load true
-swap
-store
-load natives
-readval
-get Boolean
-get FALSE
-reserve false
-load false
-swap
-store
-reserve float
-load float
-put __func1__.cl0
-parse M
-store
-reserve integer
-load integer
-put __func2__.cl0
-parse M
-store
 reserve boolean
 load boolean
-put __func3__.cl0
+put __func1__.cl0
 parse M
 store
 reserve error
 load error
-put __func4__.cl0
+put __func2__.cl0
 parse M
 store
 put 0
@@ -120,7 +64,7 @@ store
 oldscope
 reserve struct
 load struct
-put __func5__.cl0
+put __func3__.cl0
 parse M
 store
 load struct

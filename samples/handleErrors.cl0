@@ -2,36 +2,6 @@ put 0
 parse A
 duplicate
 get push
-put java.lang.Boolean
-parse N
-swap
-put Boolean
-parse S
-swap
-invoke 2
-pop
-duplicate
-get push
-put java.lang.Long
-parse N
-swap
-put Long
-parse S
-swap
-invoke 2
-pop
-duplicate
-get push
-put java.lang.Double
-parse N
-swap
-put Double
-parse S
-swap
-invoke 2
-pop
-duplicate
-get push
 put ccl.vm.core.ErrorMarker
 parse N
 swap
@@ -44,40 +14,14 @@ reserve natives
 load natives
 swap
 store
-load natives
-readval
-get Boolean
-get TRUE
-reserve true
-load true
-swap
-store
-load natives
-readval
-get Boolean
-get FALSE
-reserve false
-load false
-swap
-store
-reserve float
-load float
-put __func1__.cl0
-parse M
-store
-reserve integer
-load integer
-put __func2__.cl0
-parse M
-store
 reserve boolean
 load boolean
-put __func3__.cl0
+put __func1__.cl0
 parse M
 store
 reserve error
 load error
-put __func4__.cl0
+put __func2__.cl0
 parse M
 store
 put 0
@@ -145,9 +89,9 @@ parse S
 swap
 invoke 1
 if
-goto _if_5_
-goto _if_5_end_
-mark _if_5_
+goto _if_3_
+goto _if_3_end_
+mark _if_3_
 load println
 readval
 put UNEXPECTED!!!!
@@ -155,7 +99,7 @@ parse S
 swap
 invoke 1
 pop
-mark _if_5_end_
+mark _if_3_end_
 load undefined
 readval
 get someProperty
@@ -172,9 +116,9 @@ parse S
 swap
 invoke 1
 if
-goto _if_6_
-goto _if_6_end_
-mark _if_6_
+goto _if_4_
+goto _if_4_end_
+mark _if_4_
 load println
 readval
 put EXPECTED :)
@@ -190,4 +134,4 @@ get data
 swap
 invoke 1
 pop
-mark _if_6_end_
+mark _if_4_end_

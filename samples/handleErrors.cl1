@@ -1,33 +1,6 @@
 G:A0
 D
 G:~:push
-G:Njava.lang.Boolean
-
-S
-G:SBoolean
-S
-;:invoke 2
-P
-D
-G:~:push
-G:Njava.lang.Long
-
-S
-G:SLong
-S
-;:invoke 2
-P
-D
-G:~:push
-G:Njava.lang.Double
-
-S
-G:SDouble
-S
-;:invoke 2
-P
-D
-G:~:push
 G:Nccl.vm.core.ErrorMarker
 
 S
@@ -38,20 +11,8 @@ P
 
 
 V1::natives:#
-G:Vnatives
-G:~:Boolean
-G:~:TRUE
-
-V1::true:#
-G:Vnatives
-G:~:Boolean
-G:~:FALSE
-
-V1::false:#
-V1::float:M__func1__.cl0
-V1::integer:M__func2__.cl0
-V1::boolean:M__func3__.cl0
-V1::error:M__func4__.cl0
+V1::boolean:M__func1__.cl0
+V1::error:M__func2__.cl0
 G:I0
 
 V1::println:#
@@ -103,9 +64,9 @@ S
 ;:invoke 1
 
 ?:~
-#:_if_5_:goto
-#:_if_5_end_:goto
-#:_if_5_:mark
+#:_if_3_:goto
+#:_if_3_end_:goto
+#:_if_3_:mark
 G:Vprintln
 G:SUNEXPECTED!!!!
 
@@ -115,7 +76,7 @@ S
 P
 
 
-#:_if_5_end_:mark
+#:_if_3_end_:mark
 
 G:Vundefined
 G:~:someProperty
@@ -130,9 +91,9 @@ S
 ;:invoke 1
 
 ?:~
-#:_if_6_:goto
-#:_if_6_end_:goto
-#:_if_6_:mark
+#:_if_4_:goto
+#:_if_4_end_:goto
+#:_if_4_:mark
 G:Vprintln
 G:SEXPECTED \:)
 
@@ -150,6 +111,6 @@ S
 P
 
 
-#:_if_6_end_:mark
+#:_if_4_end_:mark
 
 
