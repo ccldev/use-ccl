@@ -14,5 +14,5 @@ point.intern.setProperty("add", pointAdder.bind(point).intern);
 println(point + point);
 
 var dimension = (java.awt.Dimension)(800,600);
-println("Following output should be ccl.vm.expr.FloatExpression");
-println(dimension.getWidth().intern.getClass().getName());
+println("Following output should be number");
+println(dimension.getWidth().type);

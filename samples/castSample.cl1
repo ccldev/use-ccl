@@ -41,7 +41,7 @@ V0::read:#
 
 }
 G:Vprintln
-G:SExpected\: integer, float, false, boolean
+G:SExpected\: number, number, false, boolean
 
 S
 ;:invoke 1

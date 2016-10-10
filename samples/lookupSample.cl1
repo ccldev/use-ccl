@@ -107,6 +107,7 @@ S
 
 P
 G:Vpersons
+G:~:property
 G:Vread
 ;:invoke 0
 G:~:toLowerCase

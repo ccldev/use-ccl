@@ -106,7 +106,7 @@ S
 
 V1::dimension:#
 G:Vprintln
-G:SFollowing output should be ccl.vm.core.expr.FloatExpression
+G:SFollowing output should be number
 
 S
 ;:invoke 1
@@ -116,11 +116,7 @@ G:Vprintln
 G:Vdimension
 G:~:getWidth
 ;:invoke 0
-G:~:intern
-G:~:getClass
-;:invoke 0
-G:~:getName
-;:invoke 0
+G:~:type
 
 S
 ;:invoke 1

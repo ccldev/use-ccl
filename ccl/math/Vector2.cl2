@@ -11,10 +11,7 @@ def Vector2(x,y){
         return Vector2(a.x - b.x, a.y - b.y);
     }
     def mul(a,b){
-        if(a.type == "integer"){
-            return b.mulScalar(b);
-        }
-        if(a.type == "float"){
+        if(b.type == "number"){
             return a.mulScalar(b);
         }
         return Vector2(a.x * b.x, a.y * b.y);

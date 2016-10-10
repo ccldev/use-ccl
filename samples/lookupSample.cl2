@@ -9,6 +9,6 @@ var persons = [
 ];
 
 println("Type a name!");
-var lookup = persons(read().toLowerCase());
+var lookup = persons.property(read().toLowerCase());
 
 println(lookup);

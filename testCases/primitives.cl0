@@ -139,7 +139,7 @@ swap
 store
 load println
 readval
-put Following output should be ccl.vm.core.expr.FloatExpression
+put Following output should be number
 parse S
 swap
 invoke 1
@@ -150,11 +150,7 @@ load dimension
 readval
 get getWidth
 invoke 0
-get intern
-get getClass
-invoke 0
-get getName
-invoke 0
+get type
 swap
 invoke 1
 pop

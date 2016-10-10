@@ -140,6 +140,7 @@ invoke 1
 pop
 load persons
 readval
+get property
 load read
 readval
 invoke 0

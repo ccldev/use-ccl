@@ -64,7 +64,7 @@ store
 oldscope
 load println
 readval
-put Expected: integer, float, false, boolean
+put Expected: number, number, false, boolean
 parse S
 swap
 invoke 1

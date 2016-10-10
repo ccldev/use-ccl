@@ -13,3 +13,6 @@ println(vec1 - vec2);
 
 println("Expect\: 6;40");
 println(vec1 * vec2);
+
+println("Expect\: 4;20");
+println(vec1 * 4);

@@ -150,3 +150,22 @@ invoke 1
 swap
 invoke 1
 pop
+load println
+readval
+put Expect: 4;20
+parse S
+swap
+invoke 1
+pop
+load println
+readval
+load vec1
+readval
+get mul
+put 4
+parse I
+swap
+invoke 1
+swap
+invoke 1
+pop

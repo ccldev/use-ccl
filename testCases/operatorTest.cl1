@@ -118,4 +118,23 @@ S
 ;:invoke 1
 
 P
+G:Vprintln
+G:SExpect\: 4;20
+
+S
+;:invoke 1
+
+P
+G:Vprintln
+G:Vvec1
+G:~:mul
+G:I4
+
+S
+;:invoke 1
+
+S
+;:invoke 1
+
+P
 
