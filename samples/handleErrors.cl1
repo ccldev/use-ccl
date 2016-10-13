@@ -1,18 +1,3 @@
-G:A0
-D
-G:~:push
-G:Nccl.vm.core.ErrorMarker
-
-S
-G:SError
-S
-;:invoke 2
-P
-
-
-V1::natives:#
-V1::boolean:M__func1__.cl0
-V1::error:M__func2__.cl0
 G:I0
 
 V1::println:#
@@ -64,9 +49,9 @@ S
 ;:invoke 1
 
 ?:~
-#:_if_3_:goto
-#:_if_3_end_:goto
-#:_if_3_:mark
+#:_if_1_:goto
+#:_if_1_end_:goto
+#:_if_1_:mark
 G:Vprintln
 G:SUNEXPECTED!!!!
 
@@ -76,7 +61,7 @@ S
 P
 
 
-#:_if_3_end_:mark
+#:_if_1_end_:mark
 
 G:Vundefined
 G:~:someProperty
@@ -91,9 +76,9 @@ S
 ;:invoke 1
 
 ?:~
-#:_if_4_:goto
-#:_if_4_end_:goto
-#:_if_4_:mark
+#:_if_2_:goto
+#:_if_2_end_:goto
+#:_if_2_:mark
 G:Vprintln
 G:SEXPECTED \:)
 
@@ -111,6 +96,6 @@ S
 P
 
 
-#:_if_4_end_:mark
+#:_if_2_end_:mark
 
 

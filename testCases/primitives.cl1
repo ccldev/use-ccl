@@ -1,18 +1,3 @@
-G:A0
-D
-G:~:push
-G:Nccl.vm.core.ErrorMarker
-
-S
-G:SError
-S
-;:invoke 2
-P
-
-
-V1::natives:#
-V1::boolean:M__func1__.cl0
-V1::error:M__func2__.cl0
 G:I0
 
 V1::println:#
@@ -64,7 +49,7 @@ S
 ;:invoke 1
 
 P
-V1::pointAdder:M__func3__.cl0
+V1::pointAdder:M__func1__.cl0
 G:Vpoint
 G:~:intern
 G:~:setProperty

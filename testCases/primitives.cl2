@@ -1,5 +1,4 @@
 #include ccl/std/Console.cl2
-#defop + add
 
 var point = (java.awt.Point)(1,2);
 

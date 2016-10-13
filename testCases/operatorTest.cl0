@@ -1,32 +1,6 @@
-put 0
-parse A
-duplicate
-get push
-put ccl.vm.core.ErrorMarker
-parse N
-swap
-put Error
-parse S
-swap
-invoke 2
-pop
-reserve natives
-load natives
-swap
-store
-reserve boolean
-load boolean
-put __func1__.cl0
-parse M
-store
-reserve error
-load error
-put __func2__.cl0
-parse M
-store
 reserve Vector2
 load Vector2
-put __func3__.cl0
+put __func1__.cl0
 parse M
 store
 put 0
