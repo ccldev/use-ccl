@@ -1,20 +1,25 @@
+;:reserve println
 G:I0
 
-V1::println:#
+;:store
+;:reserve read
 G:I0
 
-V1::read:#
+;:store
 {
+;:reserve System
 G:Vjava
 G:Sjava.lang.System
 ;:invoke 1 1
 
-V1::System:#
+;:store
+;:load println
 G:VSystem
 G:~:out
 G:~:println
 
-V0::println:#
+;:store
+;:load read
 G:Vjava
 G:Sjava.util.Scanner
 ;:invoke 1 1
@@ -23,11 +28,12 @@ G:~:in
 ;:invoke 1 1
 G:~:nextLine
 
-V0::read:#
+;:store
 
 
 }
 V1::struct:M__func1__.cl0
+;:reserve Person
 G:Vstruct
 G:A0
 G:~:push
@@ -45,14 +51,15 @@ G:Sage
 
 ;:invoke 1 1
 
-V1::Person:#
+;:store
+;:reserve hans
 G:VPerson
 G:SHans
 G:SMüller
 G:I30
 ;:invoke 3 1
 
-V1::hans:#
+;:store
 G:Vprintln
 G:~:for
 G:Vhans

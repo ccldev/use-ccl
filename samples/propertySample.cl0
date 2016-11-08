@@ -1,27 +1,21 @@
-putI 0
 reserve println
-load println
-here 1
-store
 putI 0
+store
 reserve read
-load read
-here 1
+putI 0
 store
 newscope
+reserve System
 load java
 putS java.lang.System
 invoke 1 1
-reserve System
-load System
-here 1
 store
+load println
 load System
 get out
 get println
-load println
-here 1
 store
+load read
 load java
 putS java.util.Scanner
 invoke 1 1
@@ -29,14 +23,13 @@ load System
 get in
 invoke 1 1
 get nextLine
-load read
-here 1
 store
 oldscope
 reserve struct
 load struct
 putM __func1__.cl0
 store
+reserve Number
 load struct
 putA 0
 get push
@@ -46,62 +39,46 @@ get push
 putS haupt
 invoke 1 1
 invoke 1 1
-reserve Number
-load Number
-here 1
 store
+reserve num
 load Number
 putS 12345
 putS 67890
 invoke 2 1
-reserve num
-load num
-here 1
 store
+reserve props
 load num
 get properties
-reserve props
-load props
-here 1
 store
+reserve String
 load java
 putS java.lang.String
 invoke 1 1
-reserve String
-load String
-here 1
 store
-putI 0
 reserve i
-load i
-here 1
+putI 0
 store
 mark _while_2_start
 load i
 get lss
 load props
 get length
-invoke 0 0
-here 1
-invoke 1 0
+invoke 0 1
+invoke 1 1
 if _while_2_continue
 goto _while_2_end
 mark _while_2_continue
 newscope
+reserve toGet
 load props
 get get
 load i
 invoke 1 1
-reserve toGet
-load toGet
-here 1
 store
+reserve value
 load num
 load toGet
 invoke 1 1
-reserve value
-load value
-here 1
 store
 load println
 load String
@@ -120,12 +97,10 @@ invoke 1 1
 invoke 1 1
 pop
 load i
+load i
 get add
 putI 1
-here 1
-invoke 1 0
-load i
-here 1
+invoke 1 1
 store
 oldscope
 goto _while_2_start

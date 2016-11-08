@@ -1,20 +1,25 @@
+;:reserve println
 G:I0
 
-V1::println:#
+;:store
+;:reserve read
 G:I0
 
-V1::read:#
+;:store
 {
+;:reserve System
 G:Vjava
 G:Sjava.lang.System
 ;:invoke 1 1
 
-V1::System:#
+;:store
+;:load println
 G:VSystem
 G:~:out
 G:~:println
 
-V0::println:#
+;:store
+;:load read
 G:Vjava
 G:Sjava.util.Scanner
 ;:invoke 1 1
@@ -23,10 +28,11 @@ G:~:in
 ;:invoke 1 1
 G:~:nextLine
 
-V0::read:#
+;:store
 
 
 }
+;:reserve point
 G:Vjava
 G:Sjava.awt.Point
 ;:invoke 1 1
@@ -34,7 +40,7 @@ G:I1
 G:I2
 ;:invoke 2 1
 
-V1::point:#
+;:store
 G:Vprintln
 G:Vpoint
 G:~:x
@@ -42,11 +48,11 @@ G:~:add
 G:Vpoint
 G:~:y
 
-S
-;:invoke 1 0
+;:invoke 1 1
 ;:invoke 1 1
 
 P
+;:reserve dimension
 G:Vjava
 G:Sjava.awt.Dimension
 ;:invoke 1 1
@@ -54,7 +60,7 @@ G:I800
 G:I600
 ;:invoke 2 1
 
-V1::dimension:#
+;:store
 G:Vprintln
 G:SFollowing output should be number
 ;:invoke 1 1
@@ -63,7 +69,7 @@ P
 G:Vprintln
 G:Vdimension
 G:~:getWidth
-;:invoke 0 0
+;:invoke 0 1
 G:~:type
 ;:invoke 1 1
 

@@ -1,27 +1,21 @@
-putI 0
 reserve println
-load println
-here 1
-store
 putI 0
+store
 reserve read
-load read
-here 1
+putI 0
 store
 newscope
+reserve System
 load java
 putS java.lang.System
 invoke 1 1
-reserve System
-load System
-here 1
 store
+load println
 load System
 get out
 get println
-load println
-here 1
 store
+load read
 load java
 putS java.util.Scanner
 invoke 1 1
@@ -29,14 +23,13 @@ load System
 get in
 invoke 1 1
 get nextLine
-load read
-here 1
 store
 oldscope
 reserve struct
 load struct
 putM __func1__.cl0
 store
+reserve Person
 load struct
 putA 0
 get push
@@ -49,18 +42,13 @@ get push
 putS age
 invoke 1 1
 invoke 1 1
-reserve Person
-load Person
-here 1
 store
+reserve hans
 load Person
 putS Hans
 putS Müller
 putI 30
 invoke 3 1
-reserve hans
-load hans
-here 1
 store
 load println
 get for

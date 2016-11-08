@@ -1,25 +1,30 @@
+;:reserve System
 G:Vjava
 G:Sjava.lang.System
 ;:invoke 1 1
 
-V1::System:#
+;:store
+;:reserve Scanner
 G:Vjava
 G:Sjava.util.Scanner
 ;:invoke 1 1
 
-V1::Scanner:#
+;:store
+;:reserve scanner
 G:VScanner
 G:VSystem
 G:~:in
 ;:invoke 1 1
 
-V1::scanner:#
+;:store
+;:reserve read
 G:Vscanner
 G:~:nextLine
 
-V1::read:#
+;:store
+;:reserve test
 G:Vread
-;:invoke 0 0
+;:invoke 0 1
 
-V1::test:#
+;:store
 

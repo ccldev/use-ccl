@@ -1,27 +1,21 @@
-putI 0
 reserve println
-load println
-here 1
-store
 putI 0
+store
 reserve read
-load read
-here 1
+putI 0
 store
 newscope
+reserve System
 load java
 putS java.lang.System
 invoke 1 1
-reserve System
-load System
-here 1
 store
+load println
 load System
 get out
 get println
-load println
-here 1
 store
+load read
 load java
 putS java.util.Scanner
 invoke 1 1
@@ -29,28 +23,23 @@ load System
 get in
 invoke 1 1
 get nextLine
-load read
-here 1
 store
 oldscope
 load println
 putS Expected: error output.
 invoke 1 1
 pop
+reserve working
 putI 1
 get add
 putI 5
 invoke 1 1
-reserve working
-load working
-here 1
 store
 load working
 get type
 get equals
 putS error
-here 1
-invoke 1 0
+invoke 1 1
 if _if_1_
 goto _if_1_end_
 mark _if_1_
@@ -59,18 +48,15 @@ putS UNEXPECTED!!!!
 invoke 1 1
 pop
 mark _if_1_end_
+reserve err
 load undefined
 get someProperty
-reserve err
-load err
-here 1
 store
 load err
 get type
 get equals
 putS error
-here 1
-invoke 1 0
+invoke 1 1
 if _if_2_
 goto _if_2_end_
 mark _if_2_

@@ -1,27 +1,21 @@
-putI 0
 reserve println
-load println
-here 1
-store
 putI 0
+store
 reserve read
-load read
-here 1
+putI 0
 store
 newscope
+reserve System
 load java
 putS java.lang.System
 invoke 1 1
-reserve System
-load System
-here 1
 store
+load println
 load System
 get out
 get println
-load println
-here 1
 store
+load read
 load java
 putS java.util.Scanner
 invoke 1 1
@@ -29,8 +23,6 @@ load System
 get in
 invoke 1 1
 get nextLine
-load read
-here 1
 store
 oldscope
 load println

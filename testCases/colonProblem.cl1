@@ -1,8 +1,10 @@
+;:reserve System
 G:Vjava
 G:Sjava.lang.System
 ;:invoke 1 1
 
-V1::System:#
+;:store
+;:reserve in
 G:Vjava
 G:Sjava.util.Scanner
 ;:invoke 1 1
@@ -10,9 +12,9 @@ G:VSystem
 G:~:in
 ;:invoke 1 1
 G:~:nextLine
-;:invoke 0 0
+;:invoke 0 1
 
-V1::in:#
+;:store
 G:VSystem
 G:~:out
 G:~:println

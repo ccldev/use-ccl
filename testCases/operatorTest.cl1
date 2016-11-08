@@ -1,21 +1,26 @@
 V1::Vector2:M__func1__.cl0
+;:reserve println
 G:I0
 
-V1::println:#
+;:store
+;:reserve read
 G:I0
 
-V1::read:#
+;:store
 {
+;:reserve System
 G:Vjava
 G:Sjava.lang.System
 ;:invoke 1 1
 
-V1::System:#
+;:store
+;:load println
 G:VSystem
 G:~:out
 G:~:println
 
-V0::println:#
+;:store
+;:load read
 G:Vjava
 G:Sjava.util.Scanner
 ;:invoke 1 1
@@ -24,22 +29,24 @@ G:~:in
 ;:invoke 1 1
 G:~:nextLine
 
-V0::read:#
+;:store
 
 
 }
+;:reserve vec1
 G:VVector2
 G:I1
 G:I5
 ;:invoke 2 1
 
-V1::vec1:#
+;:store
+;:reserve vec2
 G:VVector2
 G:I6
 G:I8
 ;:invoke 2 1
 
-V1::vec2:#
+;:store
 G:Vprintln
 G:SExpect\: 7;13
 ;:invoke 1 1
@@ -50,8 +57,7 @@ G:Vvec1
 G:~:add
 G:Vvec2
 
-S
-;:invoke 1 0
+;:invoke 1 1
 ;:invoke 1 1
 
 P
@@ -65,8 +71,7 @@ G:Vvec1
 G:~:sub
 G:Vvec2
 
-S
-;:invoke 1 0
+;:invoke 1 1
 ;:invoke 1 1
 
 P
@@ -80,8 +85,7 @@ G:Vvec1
 G:~:mul
 G:Vvec2
 
-S
-;:invoke 1 0
+;:invoke 1 1
 ;:invoke 1 1
 
 P
@@ -95,8 +99,7 @@ G:Vvec1
 G:~:mul
 G:I4
 
-S
-;:invoke 1 0
+;:invoke 1 1
 ;:invoke 1 1
 
 P

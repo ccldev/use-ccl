@@ -1,20 +1,25 @@
+;:reserve println
 G:I0
 
-V1::println:#
+;:store
+;:reserve read
 G:I0
 
-V1::read:#
+;:store
 {
+;:reserve System
 G:Vjava
 G:Sjava.lang.System
 ;:invoke 1 1
 
-V1::System:#
+;:store
+;:load println
 G:VSystem
 G:~:out
 G:~:println
 
-V0::println:#
+;:store
+;:load read
 G:Vjava
 G:Sjava.util.Scanner
 ;:invoke 1 1
@@ -23,11 +28,12 @@ G:~:in
 ;:invoke 1 1
 G:~:nextLine
 
-V0::read:#
+;:store
 
 
 }
 V1::struct:M__func1__.cl0
+;:reserve Number
 G:Vstruct
 G:A0
 G:~:push
@@ -41,50 +47,55 @@ G:Shaupt
 
 ;:invoke 1 1
 
-V1::Number:#
+;:store
+;:reserve num
 G:VNumber
 G:S12345
 G:S67890
 ;:invoke 2 1
 
-V1::num:#
+;:store
+;:reserve props
 G:Vnum
 G:~:properties
 
-V1::props:#
+;:store
+;:reserve String
 G:Vjava
 G:Sjava.lang.String
 ;:invoke 1 1
 
-V1::String:#
+;:store
+;:reserve i
 G:I0
 
-V1::i:#
+;:store
 #:_while_2_start:mark
 G:Vi
 G:~:lss
 G:Vprops
 G:~:length
-;:invoke 0 0
+;:invoke 0 1
 
-S
-;:invoke 1 0
+;:invoke 1 1
 
 ?:_while_2_continue:goto
 #:_while_2_end:goto
 #:_while_2_continue:mark
 {
+;:reserve toGet
 G:Vprops
 G:~:get
 G:Vi
 ;:invoke 1 1
 
-V1::toGet:#
+;:store
+;:reserve value
 G:Vnum
 G:VtoGet
 ;:invoke 1 1
 
-V1::value:#
+;:store
 G:Vprintln
 G:VString
 G:~:valueOf
@@ -102,14 +113,14 @@ G:Vvalue
 ;:invoke 1 1
 
 P
+;:load i
 G:Vi
 G:~:add
 G:I1
 
-S
-;:invoke 1 0
+;:invoke 1 1
 
-V0::i:#
+;:store
 
 
 }
