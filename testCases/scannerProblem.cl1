@@ -1,15 +1,17 @@
-G:Njava.lang.System
+G:Vjava
+G:Sjava.lang.System
+;:invoke 1 1
 
 V1::System:#
-G:Njava.util.Scanner
+G:Vjava
+G:Sjava.util.Scanner
+;:invoke 1 1
 
 V1::Scanner:#
 G:VScanner
 G:VSystem
 G:~:in
-
-S
-;:invoke 1
+;:invoke 1 1
 
 V1::scanner:#
 G:Vscanner
@@ -17,7 +19,7 @@ G:~:nextLine
 
 V1::read:#
 G:Vread
-;:invoke 0
+;:invoke 0 0
 
 V1::test:#
 

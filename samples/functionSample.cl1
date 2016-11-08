@@ -5,7 +5,9 @@ G:I0
 
 V1::read:#
 {
-G:Njava.lang.System
+G:Vjava
+G:Sjava.lang.System
+;:invoke 1 1
 
 V1::System:#
 G:VSystem
@@ -13,12 +15,12 @@ G:~:out
 G:~:println
 
 V0::println:#
-G:Njava.util.Scanner
+G:Vjava
+G:Sjava.util.Scanner
+;:invoke 1 1
 G:VSystem
 G:~:in
-
-S
-;:invoke 1
+;:invoke 1 1
 G:~:nextLine
 
 V0::read:#
@@ -27,7 +29,7 @@ V0::read:#
 }
 V1::printHello:M__func1__.cl0
 G:VprintHello
-;:invoke 0
+;:invoke 0 0
 
 P
 

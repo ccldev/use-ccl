@@ -1,157 +1,87 @@
-put 0
-parse I
+putI 0
 reserve println
 load println
-swap
+here 1
 store
-put 0
-parse I
+putI 0
 reserve read
 load read
-swap
+here 1
 store
 newscope
-put java.lang.System
-parse N
+load java
+putS java.lang.System
+invoke 1 1
 reserve System
 load System
-swap
+here 1
 store
 load System
-readval
 get out
 get println
 load println
-swap
+here 1
 store
-put java.util.Scanner
-parse N
+load java
+putS java.util.Scanner
+invoke 1 1
 load System
-readval
 get in
-swap
-invoke 1
+invoke 1 1
 get nextLine
 load read
-swap
+here 1
 store
 oldscope
 load println
-readval
-put 0
-parse A
-duplicate
+putA 0
 get push
-put 1
-parse I
-swap
-invoke 1
-pop
-duplicate
+putI 1
+invoke 1 1
 get push
-put 2
-parse I
-swap
-invoke 1
-pop
-duplicate
+putI 2
+invoke 1 1
 get push
-put 3
-parse I
-swap
-invoke 1
-pop
-duplicate
+putI 3
+invoke 1 1
 get push
-put 0
-parse A
-duplicate
+putA 0
 get push
-put 4
-parse I
-swap
-invoke 1
-pop
-duplicate
+putI 4
+invoke 1 1
 get push
-put 5
-parse I
-swap
-invoke 1
-pop
-duplicate
+putI 5
+invoke 1 1
 get push
-put 6
-parse I
-swap
-invoke 1
-pop
-swap
-invoke 1
-pop
-duplicate
+putI 6
+invoke 1 1
+invoke 1 1
 get push
-put 0
-parse A
-duplicate
+putA 0
 get push
-put 0
-parse A
-duplicate
+putA 0
 get push
-put 7
-parse I
-swap
-invoke 1
-pop
-duplicate
+putI 7
+invoke 1 1
 get push
-put 8
-parse I
-swap
-invoke 1
-pop
-duplicate
+putI 8
+invoke 1 1
 get push
-put 9
-parse I
-swap
-invoke 1
-pop
-swap
-invoke 1
-pop
-duplicate
+putI 9
+invoke 1 1
+invoke 1 1
 get push
-put 0
-parse A
-duplicate
+putA 0
 get push
-put 10
-parse I
-swap
-invoke 1
-pop
-duplicate
+putI 10
+invoke 1 1
 get push
-put 11
-parse I
-swap
-invoke 1
-pop
-duplicate
+putI 11
+invoke 1 1
 get push
-put 12
-parse I
-swap
-invoke 1
-pop
-swap
-invoke 1
-pop
-swap
-invoke 1
-pop
-swap
-invoke 1
+putI 12
+invoke 1 1
+invoke 1 1
+invoke 1 1
+invoke 1 1
 pop

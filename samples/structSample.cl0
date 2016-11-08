@@ -1,106 +1,74 @@
-put 0
-parse I
+putI 0
 reserve println
 load println
-swap
+here 1
 store
-put 0
-parse I
+putI 0
 reserve read
 load read
-swap
+here 1
 store
 newscope
-put java.lang.System
-parse N
+load java
+putS java.lang.System
+invoke 1 1
 reserve System
 load System
-swap
+here 1
 store
 load System
-readval
 get out
 get println
 load println
-swap
+here 1
 store
-put java.util.Scanner
-parse N
+load java
+putS java.util.Scanner
+invoke 1 1
 load System
-readval
 get in
-swap
-invoke 1
+invoke 1 1
 get nextLine
 load read
-swap
+here 1
 store
 oldscope
 reserve struct
 load struct
-put __func1__.cl0
-parse M
+putM __func1__.cl0
 store
 load struct
-readval
-put 0
-parse A
-duplicate
+putA 0
 get push
-put firstName
-parse S
-swap
-invoke 1
-pop
-duplicate
+putS firstName
+invoke 1 1
 get push
-put lastName
-parse S
-swap
-invoke 1
-pop
-duplicate
+putS lastName
+invoke 1 1
 get push
-put age
-parse S
-swap
-invoke 1
-pop
-swap
-invoke 1
+putS age
+invoke 1 1
+invoke 1 1
 reserve Person
 load Person
-swap
+here 1
 store
 load Person
-readval
-put Hans
-parse S
-swap
-put Müller
-parse S
-swap
-put 30
-parse I
-swap
-invoke 3
+putS Hans
+putS Müller
+putI 30
+invoke 3 1
 reserve hans
 load hans
-swap
+here 1
 store
 load println
-readval
 get for
 load hans
-readval
-swap
-invoke 1
+invoke 1 1
 pop
 load println
-readval
 load hans
-readval
 get lastName
-swap
-invoke 1
+invoke 1 1
 pop

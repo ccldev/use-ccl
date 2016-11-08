@@ -6,7 +6,9 @@ G:I0
 
 V1::read:#
 {
-G:Njava.lang.System
+G:Vjava
+G:Sjava.lang.System
+;:invoke 1 1
 
 V1::System:#
 G:VSystem
@@ -14,12 +16,12 @@ G:~:out
 G:~:println
 
 V0::println:#
-G:Njava.util.Scanner
+G:Vjava
+G:Sjava.util.Scanner
+;:invoke 1 1
 G:VSystem
 G:~:in
-
-S
-;:invoke 1
+;:invoke 1 1
 G:~:nextLine
 
 V0::read:#
@@ -28,29 +30,19 @@ V0::read:#
 }
 G:VVector2
 G:I1
-
-S
 G:I5
-
-S
-;:invoke 2
+;:invoke 2 1
 
 V1::vec1:#
 G:VVector2
 G:I6
-
-S
 G:I8
-
-S
-;:invoke 2
+;:invoke 2 1
 
 V1::vec2:#
 G:Vprintln
 G:SExpect\: 7;13
-
-S
-;:invoke 1
+;:invoke 1 1
 
 P
 G:Vprintln
@@ -59,17 +51,13 @@ G:~:add
 G:Vvec2
 
 S
-;:invoke 1
-
-S
-;:invoke 1
+;:invoke 1 0
+;:invoke 1 1
 
 P
 G:Vprintln
 G:SExpect\: -5;-3
-
-S
-;:invoke 1
+;:invoke 1 1
 
 P
 G:Vprintln
@@ -78,17 +66,13 @@ G:~:sub
 G:Vvec2
 
 S
-;:invoke 1
-
-S
-;:invoke 1
+;:invoke 1 0
+;:invoke 1 1
 
 P
 G:Vprintln
 G:SExpect\: 6;40
-
-S
-;:invoke 1
+;:invoke 1 1
 
 P
 G:Vprintln
@@ -97,17 +81,13 @@ G:~:mul
 G:Vvec2
 
 S
-;:invoke 1
-
-S
-;:invoke 1
+;:invoke 1 0
+;:invoke 1 1
 
 P
 G:Vprintln
 G:SExpect\: 4;20
-
-S
-;:invoke 1
+;:invoke 1 1
 
 P
 G:Vprintln
@@ -116,10 +96,8 @@ G:~:mul
 G:I4
 
 S
-;:invoke 1
-
-S
-;:invoke 1
+;:invoke 1 0
+;:invoke 1 1
 
 P
 

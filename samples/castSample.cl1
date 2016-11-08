@@ -5,7 +5,9 @@ G:I0
 
 V1::read:#
 {
-G:Njava.lang.System
+G:Vjava
+G:Sjava.lang.System
+;:invoke 1 1
 
 V1::System:#
 G:VSystem
@@ -13,12 +15,12 @@ G:~:out
 G:~:println
 
 V0::println:#
-G:Njava.util.Scanner
+G:Vjava
+G:Sjava.util.Scanner
+;:invoke 1 1
 G:VSystem
 G:~:in
-
-S
-;:invoke 1
+;:invoke 1 1
 G:~:nextLine
 
 V0::read:#
@@ -27,56 +29,38 @@ V0::read:#
 }
 G:Vprintln
 G:SExpected\: number, number, false, boolean
-
-S
-;:invoke 1
+;:invoke 1 1
 
 P
 G:Vprintln
 G:Vinteger
 G:S14
-
-S
-;:invoke 1
+;:invoke 1 1
 G:~:type
-
-S
-;:invoke 1
+;:invoke 1 1
 
 P
 G:Vprintln
 G:Vfloat
 G:S12.34
-
-S
-;:invoke 1
+;:invoke 1 1
 G:~:type
-
-S
-;:invoke 1
+;:invoke 1 1
 
 P
 G:Vprintln
 G:Vboolean
 G:Sljöhn
-
-S
-;:invoke 1
-
-S
-;:invoke 1
+;:invoke 1 1
+;:invoke 1 1
 
 P
 G:Vprintln
 G:Vboolean
 G:Strue
-
-S
-;:invoke 1
+;:invoke 1 1
 G:~:type
-
-S
-;:invoke 1
+;:invoke 1 1
 
 P
 

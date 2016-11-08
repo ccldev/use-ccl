@@ -5,7 +5,9 @@ G:I0
 
 V1::read:#
 {
-G:Njava.lang.System
+G:Vjava
+G:Sjava.lang.System
+;:invoke 1 1
 
 V1::System:#
 G:VSystem
@@ -13,12 +15,12 @@ G:~:out
 G:~:println
 
 V0::println:#
-G:Njava.util.Scanner
+G:Vjava
+G:Sjava.util.Scanner
+;:invoke 1 1
 G:VSystem
 G:~:in
-
-S
-;:invoke 1
+;:invoke 1 1
 G:~:nextLine
 
 V0::read:#
@@ -28,20 +30,16 @@ V0::read:#
 V1::errorOnUndefined:M__func1__.cl0
 G:VerrorOnUndefined
 G:SShould work
-
-S
-;:invoke 1
+;:invoke 1 1
 
 P
 G:Vprintln
 G:SError message expected!
-
-S
-;:invoke 1
+;:invoke 1 1
 
 P
 G:VerrorOnUndefined
-;:invoke 0
+;:invoke 0 0
 
 P
 

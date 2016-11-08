@@ -1,145 +1,103 @@
 reserve Vector2
 load Vector2
-put __func1__.cl0
-parse M
+putM __func1__.cl0
 store
-put 0
-parse I
+putI 0
 reserve println
 load println
-swap
+here 1
 store
-put 0
-parse I
+putI 0
 reserve read
 load read
-swap
+here 1
 store
 newscope
-put java.lang.System
-parse N
+load java
+putS java.lang.System
+invoke 1 1
 reserve System
 load System
-swap
+here 1
 store
 load System
-readval
 get out
 get println
 load println
-swap
+here 1
 store
-put java.util.Scanner
-parse N
+load java
+putS java.util.Scanner
+invoke 1 1
 load System
-readval
 get in
-swap
-invoke 1
+invoke 1 1
 get nextLine
 load read
-swap
+here 1
 store
 oldscope
 load Vector2
-readval
-put 1
-parse I
-swap
-put 5
-parse I
-swap
-invoke 2
+putI 1
+putI 5
+invoke 2 1
 reserve vec1
 load vec1
-swap
+here 1
 store
 load Vector2
-readval
-put 6
-parse I
-swap
-put 8
-parse I
-swap
-invoke 2
+putI 6
+putI 8
+invoke 2 1
 reserve vec2
 load vec2
-swap
+here 1
 store
 load println
-readval
-put Expect: 7;13
-parse S
-swap
-invoke 1
+putS Expect: 7;13
+invoke 1 1
 pop
 load println
-readval
 load vec1
-readval
 get add
 load vec2
-readval
-swap
-invoke 1
-swap
-invoke 1
+here 1
+invoke 1 0
+invoke 1 1
 pop
 load println
-readval
-put Expect: -5;-3
-parse S
-swap
-invoke 1
+putS Expect: -5;-3
+invoke 1 1
 pop
 load println
-readval
 load vec1
-readval
 get sub
 load vec2
-readval
-swap
-invoke 1
-swap
-invoke 1
+here 1
+invoke 1 0
+invoke 1 1
 pop
 load println
-readval
-put Expect: 6;40
-parse S
-swap
-invoke 1
+putS Expect: 6;40
+invoke 1 1
 pop
 load println
-readval
 load vec1
-readval
 get mul
 load vec2
-readval
-swap
-invoke 1
-swap
-invoke 1
+here 1
+invoke 1 0
+invoke 1 1
 pop
 load println
-readval
-put Expect: 4;20
-parse S
-swap
-invoke 1
+putS Expect: 4;20
+invoke 1 1
 pop
 load println
-readval
 load vec1
-readval
 get mul
-put 4
-parse I
-swap
-invoke 1
-swap
-invoke 1
+putI 4
+here 1
+invoke 1 0
+invoke 1 1
 pop

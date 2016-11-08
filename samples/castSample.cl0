@@ -1,92 +1,66 @@
-put 0
-parse I
+putI 0
 reserve println
 load println
-swap
+here 1
 store
-put 0
-parse I
+putI 0
 reserve read
 load read
-swap
+here 1
 store
 newscope
-put java.lang.System
-parse N
+load java
+putS java.lang.System
+invoke 1 1
 reserve System
 load System
-swap
+here 1
 store
 load System
-readval
 get out
 get println
 load println
-swap
+here 1
 store
-put java.util.Scanner
-parse N
+load java
+putS java.util.Scanner
+invoke 1 1
 load System
-readval
 get in
-swap
-invoke 1
+invoke 1 1
 get nextLine
 load read
-swap
+here 1
 store
 oldscope
 load println
-readval
-put Expected: number, number, false, boolean
-parse S
-swap
-invoke 1
+putS Expected: number, number, false, boolean
+invoke 1 1
 pop
 load println
-readval
 load integer
-readval
-put 14
-parse S
-swap
-invoke 1
+putS 14
+invoke 1 1
 get type
-swap
-invoke 1
+invoke 1 1
 pop
 load println
-readval
 load float
-readval
-put 12.34
-parse S
-swap
-invoke 1
+putS 12.34
+invoke 1 1
 get type
-swap
-invoke 1
+invoke 1 1
 pop
 load println
-readval
 load boolean
-readval
-put ljöhn
-parse S
-swap
-invoke 1
-swap
-invoke 1
+putS ljöhn
+invoke 1 1
+invoke 1 1
 pop
 load println
-readval
 load boolean
-readval
-put true
-parse S
-swap
-invoke 1
+putS true
+invoke 1 1
 get type
-swap
-invoke 1
+invoke 1 1
 pop

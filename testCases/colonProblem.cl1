@@ -1,25 +1,26 @@
-G:Njava.util.Scanner
-G:Njava.lang.System
-G:~:in
+G:Vjava
+G:Sjava.lang.System
+;:invoke 1 1
 
-S
-;:invoke 1
+V1::System:#
+G:Vjava
+G:Sjava.util.Scanner
+;:invoke 1 1
+G:VSystem
+G:~:in
+;:invoke 1 1
 G:~:nextLine
-;:invoke 0
+;:invoke 0 0
 
 V1::in:#
-G:Njava.lang.System
+G:VSystem
 G:~:out
 G:~:println
 G:SEingabe\:\t
 G:~:concat
 G:Vin
-
-S
-;:invoke 1
-
-S
-;:invoke 1
+;:invoke 1 1
+;:invoke 1 1
 
 P
 

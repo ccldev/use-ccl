@@ -5,7 +5,9 @@ G:I0
 
 V1::read:#
 {
-G:Njava.lang.System
+G:Vjava
+G:Sjava.lang.System
+;:invoke 1 1
 
 V1::System:#
 G:VSystem
@@ -13,12 +15,12 @@ G:~:out
 G:~:println
 
 V0::println:#
-G:Njava.util.Scanner
+G:Vjava
+G:Sjava.util.Scanner
+;:invoke 1 1
 G:VSystem
 G:~:in
-
-S
-;:invoke 1
+;:invoke 1 1
 G:~:nextLine
 
 V0::read:#
@@ -27,17 +29,13 @@ V0::read:#
 }
 G:Vprintln
 G:SExpected\: error output.
-
-S
-;:invoke 1
+;:invoke 1 1
 
 P
 G:I1
 G:~:add
 G:I5
-
-S
-;:invoke 1
+;:invoke 1 1
 
 V1::working:#
 G:Vworking
@@ -46,17 +44,14 @@ G:~:equals
 G:Serror
 
 S
-;:invoke 1
+;:invoke 1 0
 
-?:~
-#:_if_1_:goto
+?:_if_1_
 #:_if_1_end_:goto
 #:_if_1_:mark
 G:Vprintln
 G:SUNEXPECTED!!!!
-
-S
-;:invoke 1
+;:invoke 1 1
 
 P
 
@@ -73,25 +68,20 @@ G:~:equals
 G:Serror
 
 S
-;:invoke 1
+;:invoke 1 0
 
-?:~
-#:_if_2_:goto
+?:_if_2_
 #:_if_2_end_:goto
 #:_if_2_:mark
 G:Vprintln
 G:SEXPECTED \:)
-
-S
-;:invoke 1
+;:invoke 1 1
 
 P
 G:Vprintln
 G:Verr
 G:~:data
-
-S
-;:invoke 1
+;:invoke 1 1
 
 P
 

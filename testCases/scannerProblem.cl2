@@ -1,6 +1,6 @@
-var System = (java.lang.System);
+var System = java("java.lang.System");
 
-var Scanner = (java.util.Scanner);
+var Scanner = java("java.util.Scanner");
 var scanner = Scanner(System.in);
 var read = scanner.nextLine;
 

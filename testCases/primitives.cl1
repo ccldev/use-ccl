@@ -5,7 +5,9 @@ G:I0
 
 V1::read:#
 {
-G:Njava.lang.System
+G:Vjava
+G:Sjava.lang.System
+;:invoke 1 1
 
 V1::System:#
 G:VSystem
@@ -13,26 +15,24 @@ G:~:out
 G:~:println
 
 V0::println:#
-G:Njava.util.Scanner
+G:Vjava
+G:Sjava.util.Scanner
+;:invoke 1 1
 G:VSystem
 G:~:in
-
-S
-;:invoke 1
+;:invoke 1 1
 G:~:nextLine
 
 V0::read:#
 
 
 }
-G:Njava.awt.Point
+G:Vjava
+G:Sjava.awt.Point
+;:invoke 1 1
 G:I1
-
-S
 G:I2
-
-S
-;:invoke 2
+;:invoke 2 1
 
 V1::point:#
 G:Vprintln
@@ -43,68 +43,29 @@ G:Vpoint
 G:~:y
 
 S
-;:invoke 1
-
-S
-;:invoke 1
+;:invoke 1 0
+;:invoke 1 1
 
 P
-V1::pointAdder:M__func1__.cl0
-G:Vpoint
-G:~:intern
-G:~:setProperty
-G:Sadd
-
-S
-G:VpointAdder
-G:~:bind
-G:Vpoint
-
-S
-;:invoke 1
-G:~:intern
-
-S
-;:invoke 2
-
-P
-G:Vprintln
-G:Vpoint
-G:~:add
-G:Vpoint
-
-S
-;:invoke 1
-
-S
-;:invoke 1
-
-P
-G:Njava.awt.Dimension
+G:Vjava
+G:Sjava.awt.Dimension
+;:invoke 1 1
 G:I800
-
-S
 G:I600
-
-S
-;:invoke 2
+;:invoke 2 1
 
 V1::dimension:#
 G:Vprintln
 G:SFollowing output should be number
-
-S
-;:invoke 1
+;:invoke 1 1
 
 P
 G:Vprintln
 G:Vdimension
 G:~:getWidth
-;:invoke 0
+;:invoke 0 0
 G:~:type
-
-S
-;:invoke 1
+;:invoke 1 1
 
 P
 

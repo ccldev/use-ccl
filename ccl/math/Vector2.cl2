@@ -1,6 +1,4 @@
-#include ccl/std/ops.cl2
-
-def Vector2(x:0,y:x){
+def Vector2(x,y){
     
     var ret = [x:x,y:y];
     

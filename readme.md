@@ -1,8 +1,10 @@
+CCL 0.3: Fast alles wie davor. Nur schneller und flexibler.
+
 CCL ist eine Programmiersprache, die einigen nervigen Eigenschaften von anderen Programmiersprachen entgegen wirken soll.
 
 CCL befindet sich aktuell noch in einem sehr frühen Entwicklungsstadium, und ist deswegen lange noch nicht so einfach zu nutzen, wie es später werden soll.
 
-Hier findest du ein Tutorial zum Einstieg mit CCL. (Geschrieben für Version 0.2.9_6)
+Hier findest du ein Tutorial zum Einstieg mit CCL. (Geschrieben für Version 0.3)
 
 Einstieg:
 * Hello World-Programm
@@ -88,7 +90,7 @@ Bisher kennen wir nur Zeichenketten (oder Strings) in CCL. Diese beginnen und en
     [1,2,3] Eine Sammlug von Werten (array)
             Arrays beginnen mit [ und enden mit ].
             In einem Array können beliebig viele Werte liegen. Werte werden mit , voneinander getrennt.
-    (java.lang.System)
+    java("java.lang.System")
             Eine Java-Klasse (hier "java.lang.System").
             Erlaubt zugriff auf Java-Bibliotheken.
     
@@ -131,8 +133,8 @@ Beispiel zur while- und for-Funktion: Lese alle Zeilen aus einer Datei und gib s
 
     #include ccl/std/Console.cl2
     
-    var ScannerClass = (java.util.Scanner);
-    var FileClass = (java.io.File);
+    var ScannerClass = java("java.util.Scanner");
+    var FileClass = java("java.io.File");
     
     var file = FileClass("myFile.txt");
     var scanner = ScannerClass(file);
@@ -182,7 +184,7 @@ Obwohl man es nicht auf den ersten Blick sieht, haben in CCL alle Daten (bzw. We
     "Mein String".type      Ergibt "string"
     3.type                  Ergibt "number" (In einigen Versionen auch "integer")
     println.type            Ergibt "function"
-    (java.lang.System)      Ergibt "native"
+    java("java.lang.System")      Ergibt "native"
     
 Auf diese Weise können wir Daten kategorisieren. Wir können etwa herausfinden, ob wir eine Zahl oder eine Funktion in der Hand haben.
 

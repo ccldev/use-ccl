@@ -8,11 +8,12 @@ var Number = struct([
 
 var num = Number("12345", "67890");
 var props = num.properties;
+var String = java("java.lang.String");
 
 var i = 0;
 while(i < props.length()){
 	var toGet = props.get(i);
 	var value = num(toGet);
-	println((java.lang.String).valueOf(toGet).concat("\:\t").concat((java.lang.String).valueOf(value)));
+	println(String.valueOf(toGet).concat("\:\t").concat(String.valueOf(value)));
 	i = i + 1;
 }

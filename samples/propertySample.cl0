@@ -1,168 +1,131 @@
-put 0
-parse I
+putI 0
 reserve println
 load println
-swap
+here 1
 store
-put 0
-parse I
+putI 0
 reserve read
 load read
-swap
+here 1
 store
 newscope
-put java.lang.System
-parse N
+load java
+putS java.lang.System
+invoke 1 1
 reserve System
 load System
-swap
+here 1
 store
 load System
-readval
 get out
 get println
 load println
-swap
+here 1
 store
-put java.util.Scanner
-parse N
+load java
+putS java.util.Scanner
+invoke 1 1
 load System
-readval
 get in
-swap
-invoke 1
+invoke 1 1
 get nextLine
 load read
-swap
+here 1
 store
 oldscope
 reserve struct
 load struct
-put __func1__.cl0
-parse M
+putM __func1__.cl0
 store
 load struct
-readval
-put 0
-parse A
-duplicate
+putA 0
 get push
-put vorwahl
-parse S
-swap
-invoke 1
-pop
-duplicate
+putS vorwahl
+invoke 1 1
 get push
-put haupt
-parse S
-swap
-invoke 1
-pop
-swap
-invoke 1
+putS haupt
+invoke 1 1
+invoke 1 1
 reserve Number
 load Number
-swap
+here 1
 store
 load Number
-readval
-put 12345
-parse S
-swap
-put 67890
-parse S
-swap
-invoke 2
+putS 12345
+putS 67890
+invoke 2 1
 reserve num
 load num
-swap
+here 1
 store
 load num
-readval
 get properties
 reserve props
 load props
-swap
+here 1
 store
-put 0
-parse I
+load java
+putS java.lang.String
+invoke 1 1
+reserve String
+load String
+here 1
+store
+putI 0
 reserve i
 load i
-swap
+here 1
 store
 mark _while_2_start
 load i
-readval
 get lss
 load props
-readval
 get length
-invoke 0
-swap
-invoke 1
-if
-goto _while_2_continue
+invoke 0 0
+here 1
+invoke 1 0
+if _while_2_continue
 goto _while_2_end
 mark _while_2_continue
 newscope
 load props
-readval
 get get
 load i
-readval
-swap
-invoke 1
+invoke 1 1
 reserve toGet
 load toGet
-swap
+here 1
 store
 load num
-readval
 load toGet
-readval
-swap
-invoke 1
+invoke 1 1
 reserve value
 load value
-swap
+here 1
 store
 load println
-readval
-put java.lang.String
-parse N
+load String
 get valueOf
 load toGet
-readval
-swap
-invoke 1
+invoke 1 1
 get concat
-put :	
-parse S
-swap
-invoke 1
+putS :	
+invoke 1 1
 get concat
-put java.lang.String
-parse N
+load String
 get valueOf
 load value
-readval
-swap
-invoke 1
-swap
-invoke 1
-swap
-invoke 1
+invoke 1 1
+invoke 1 1
+invoke 1 1
 pop
 load i
-readval
 get add
-put 1
-parse I
-swap
-invoke 1
+putI 1
+here 1
+invoke 1 0
 load i
-swap
+here 1
 store
 oldscope
 goto _while_2_start

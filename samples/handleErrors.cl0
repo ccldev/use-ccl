@@ -1,111 +1,86 @@
-put 0
-parse I
+putI 0
 reserve println
 load println
-swap
+here 1
 store
-put 0
-parse I
+putI 0
 reserve read
 load read
-swap
+here 1
 store
 newscope
-put java.lang.System
-parse N
+load java
+putS java.lang.System
+invoke 1 1
 reserve System
 load System
-swap
+here 1
 store
 load System
-readval
 get out
 get println
 load println
-swap
+here 1
 store
-put java.util.Scanner
-parse N
+load java
+putS java.util.Scanner
+invoke 1 1
 load System
-readval
 get in
-swap
-invoke 1
+invoke 1 1
 get nextLine
 load read
-swap
+here 1
 store
 oldscope
 load println
-readval
-put Expected: error output.
-parse S
-swap
-invoke 1
+putS Expected: error output.
+invoke 1 1
 pop
-put 1
-parse I
+putI 1
 get add
-put 5
-parse I
-swap
-invoke 1
+putI 5
+invoke 1 1
 reserve working
 load working
-swap
+here 1
 store
 load working
-readval
 get type
 get equals
-put error
-parse S
-swap
-invoke 1
-if
-goto _if_1_
+putS error
+here 1
+invoke 1 0
+if _if_1_
 goto _if_1_end_
 mark _if_1_
 load println
-readval
-put UNEXPECTED!!!!
-parse S
-swap
-invoke 1
+putS UNEXPECTED!!!!
+invoke 1 1
 pop
 mark _if_1_end_
 load undefined
-readval
 get someProperty
 reserve err
 load err
-swap
+here 1
 store
 load err
-readval
 get type
 get equals
-put error
-parse S
-swap
-invoke 1
-if
-goto _if_2_
+putS error
+here 1
+invoke 1 0
+if _if_2_
 goto _if_2_end_
 mark _if_2_
 load println
-readval
-put EXPECTED :)
-parse S
-swap
-invoke 1
+putS EXPECTED :)
+invoke 1 1
 pop
 load println
-readval
 load err
-readval
 get data
-swap
-invoke 1
+invoke 1 1
 pop
 mark _if_2_end_

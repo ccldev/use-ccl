@@ -1,130 +1,76 @@
-put 0
-parse I
+putI 0
 reserve println
 load println
-swap
+here 1
 store
-put 0
-parse I
+putI 0
 reserve read
 load read
-swap
+here 1
 store
 newscope
-put java.lang.System
-parse N
+load java
+putS java.lang.System
+invoke 1 1
 reserve System
 load System
-swap
+here 1
 store
 load System
-readval
 get out
 get println
 load println
-swap
+here 1
 store
-put java.util.Scanner
-parse N
+load java
+putS java.util.Scanner
+invoke 1 1
 load System
-readval
 get in
-swap
-invoke 1
+invoke 1 1
 get nextLine
 load read
-swap
+here 1
 store
 oldscope
-put java.awt.Point
-parse N
-put 1
-parse I
-swap
-put 2
-parse I
-swap
-invoke 2
+load java
+putS java.awt.Point
+invoke 1 1
+putI 1
+putI 2
+invoke 2 1
 reserve point
 load point
-swap
+here 1
 store
 load println
-readval
 load point
-readval
 get x
 get add
 load point
-readval
 get y
-swap
-invoke 1
-swap
-invoke 1
+here 1
+invoke 1 0
+invoke 1 1
 pop
-reserve pointAdder
-load pointAdder
-put __func1__.cl0
-parse M
-store
-load point
-readval
-get intern
-get setProperty
-put add
-parse S
-swap
-load pointAdder
-readval
-get bind
-load point
-readval
-swap
-invoke 1
-get intern
-swap
-invoke 2
-pop
-load println
-readval
-load point
-readval
-get add
-load point
-readval
-swap
-invoke 1
-swap
-invoke 1
-pop
-put java.awt.Dimension
-parse N
-put 800
-parse I
-swap
-put 600
-parse I
-swap
-invoke 2
+load java
+putS java.awt.Dimension
+invoke 1 1
+putI 800
+putI 600
+invoke 2 1
 reserve dimension
 load dimension
-swap
+here 1
 store
 load println
-readval
-put Following output should be number
-parse S
-swap
-invoke 1
+putS Following output should be number
+invoke 1 1
 pop
 load println
-readval
 load dimension
-readval
 get getWidth
-invoke 0
+invoke 0 0
 get type
-swap
-invoke 1
+invoke 1 1
 pop

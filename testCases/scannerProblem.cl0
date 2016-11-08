@@ -1,37 +1,34 @@
-put java.lang.System
-parse N
+load java
+putS java.lang.System
+invoke 1 1
 reserve System
 load System
-swap
+here 1
 store
-put java.util.Scanner
-parse N
+load java
+putS java.util.Scanner
+invoke 1 1
 reserve Scanner
 load Scanner
-swap
+here 1
 store
 load Scanner
-readval
 load System
-readval
 get in
-swap
-invoke 1
+invoke 1 1
 reserve scanner
 load scanner
-swap
+here 1
 store
 load scanner
-readval
 get nextLine
 reserve read
 load read
-swap
+here 1
 store
 load read
-readval
-invoke 0
+invoke 0 0
 reserve test
 load test
-swap
+here 1
 store

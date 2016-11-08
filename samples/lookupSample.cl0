@@ -1,135 +1,90 @@
-put 0
-parse I
+putI 0
 reserve println
 load println
-swap
+here 1
 store
-put 0
-parse I
+putI 0
 reserve read
 load read
-swap
+here 1
 store
 newscope
-put java.lang.System
-parse N
+load java
+putS java.lang.System
+invoke 1 1
 reserve System
 load System
-swap
+here 1
 store
 load System
-readval
 get out
 get println
 load println
-swap
+here 1
 store
-put java.util.Scanner
-parse N
+load java
+putS java.util.Scanner
+invoke 1 1
 load System
-readval
 get in
-swap
-invoke 1
+invoke 1 1
 get nextLine
 load read
-swap
+here 1
 store
 oldscope
 reserve struct
 load struct
-put __func1__.cl0
-parse M
+putM __func1__.cl0
 store
 load struct
-readval
-put 0
-parse A
-duplicate
+putA 0
 get push
-put firstName
-parse S
-swap
-invoke 1
-pop
-duplicate
+putS firstName
+invoke 1 1
 get push
-put lastName
-parse S
-swap
-invoke 1
-pop
-swap
-invoke 1
+putS lastName
+invoke 1 1
+invoke 1 1
 reserve Name
 load Name
-swap
+here 1
 store
-put 0
-parse A
-duplicate
+putA 0
 get push
 load Name
-readval
-put Hans
-parse S
-swap
-put Müller
-parse S
-swap
-invoke 2
-swap
-put hans
-parse S
-swap
-invoke 2
-pop
-duplicate
+putS Hans
+putS Müller
+invoke 2 1
+putS hans
+invoke 2 1
 get push
 load Name
-readval
-put Susi
-parse S
-swap
-put Müller
-parse S
-swap
-invoke 2
-swap
-put susi
-parse S
-swap
-invoke 2
-pop
+putS Susi
+putS Müller
+invoke 2 1
+putS susi
+invoke 2 1
 reserve persons
 load persons
-swap
+here 1
 store
 load println
-readval
-put Type a name!
-parse S
-swap
-invoke 1
+putS Type a name!
+invoke 1 1
 pop
 load persons
-readval
 get property
 load read
-readval
-invoke 0
+invoke 0 0
 get toLowerCase
-invoke 0
-swap
-invoke 1
+invoke 0 0
+invoke 1 1
 reserve lookup
 load lookup
-swap
+here 1
 store
 load println
-readval
 load lookup
-readval
-swap
-invoke 1
+invoke 1 1
 pop

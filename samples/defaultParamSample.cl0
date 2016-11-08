@@ -1,90 +1,67 @@
-put 0
-parse I
+putI 0
 reserve println
 load println
-swap
+here 1
 store
-put 0
-parse I
+putI 0
 reserve read
 load read
-swap
+here 1
 store
 newscope
-put java.lang.System
-parse N
+load java
+putS java.lang.System
+invoke 1 1
 reserve System
 load System
-swap
+here 1
 store
 load System
-readval
 get out
 get println
 load println
-swap
+here 1
 store
-put java.util.Scanner
-parse N
+load java
+putS java.util.Scanner
+invoke 1 1
 load System
-readval
 get in
-swap
-invoke 1
+invoke 1 1
 get nextLine
 load read
-swap
+here 1
 store
 oldscope
 reserve normal
 load normal
-put __func1__.cl0
-parse M
+putM __func1__.cl0
 store
 reserve withDefaults
 load withDefaults
-put __func2__.cl0
-parse M
+putM __func2__.cl0
 store
 load normal
-readval
-invoke 0
+invoke 0 0
 pop
 load normal
-readval
-put 1
-parse I
-swap
-invoke 1
+putI 1
+invoke 1 1
 pop
 load normal
-readval
-put 1
-parse I
-swap
-put 2
-parse I
-swap
-invoke 2
+putI 1
+putI 2
+invoke 2 1
 pop
 load withDefaults
-readval
-invoke 0
+invoke 0 0
 pop
 load withDefaults
-readval
-put Hans
-parse S
-swap
-invoke 1
+putS Hans
+invoke 1 1
 pop
 load withDefaults
-readval
-put Susi
-parse S
-swap
-put Hi 
-parse S
-swap
-invoke 2
+putS Susi
+putS Hi 
+invoke 2 1
 pop

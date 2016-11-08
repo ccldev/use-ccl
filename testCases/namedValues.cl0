@@ -1,76 +1,56 @@
-put 0
-parse I
+putI 0
 reserve println
 load println
-swap
+here 1
 store
-put 0
-parse I
+putI 0
 reserve read
 load read
-swap
+here 1
 store
 newscope
-put java.lang.System
-parse N
+load java
+putS java.lang.System
+invoke 1 1
 reserve System
 load System
-swap
+here 1
 store
 load System
-readval
 get out
 get println
 load println
-swap
+here 1
 store
-put java.util.Scanner
-parse N
+load java
+putS java.util.Scanner
+invoke 1 1
 load System
-readval
 get in
-swap
-invoke 1
+invoke 1 1
 get nextLine
 load read
-swap
+here 1
 store
 oldscope
-put 0
-parse A
-duplicate
+putA 0
 get push
-put 123/456
-parse S
-swap
-put home
-parse S
-swap
-invoke 2
-pop
-duplicate
+putS 123/456
+putS home
+invoke 2 1
 get push
-put 321/654
-parse S
-swap
-put other
-parse S
-swap
-invoke 2
-pop
+putS 321/654
+putS other
+invoke 2 1
 reserve array
 load array
-swap
+here 1
 store
 reserve func
 load func
-put __func1__.cl0
-parse M
+putM __func1__.cl0
 store
 load func
-readval
 load array
-readval
-swap
-invoke 1
+invoke 1 1
 pop
