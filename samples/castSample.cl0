@@ -8,7 +8,7 @@ newscope
 reserve System
 load java
 putS java.lang.System
-invoke 1 1
+invoke 1
 store
 load println
 load System
@@ -18,41 +18,41 @@ store
 load read
 load java
 putS java.util.Scanner
-invoke 1 1
+invoke 1
 load System
 get in
-invoke 1 1
+invoke 1
 get nextLine
 store
 oldscope
 load println
-putS Expected: number, number, false, boolean
-invoke 1 1
+putS Expected\: number, number, false, boolean
+invoke 1
 pop
 load println
 load integer
 putS 14
-invoke 1 1
+invoke 1
 get type
-invoke 1 1
+invoke 1
 pop
 load println
 load float
 putS 12.34
-invoke 1 1
+invoke 1
 get type
-invoke 1 1
+invoke 1
 pop
 load println
 load boolean
 putS ljöhn
-invoke 1 1
-invoke 1 1
+invoke 1
+invoke 1
 pop
 load println
 load boolean
 putS true
-invoke 1 1
+invoke 1
 get type
-invoke 1 1
+invoke 1
 pop

@@ -8,7 +8,7 @@ newscope
 reserve System
 load java
 putS java.lang.System
-invoke 1 1
+invoke 1
 store
 load println
 load System
@@ -18,10 +18,10 @@ store
 load read
 load java
 putS java.util.Scanner
-invoke 1 1
+invoke 1
 load System
 get in
-invoke 1 1
+invoke 1
 get nextLine
 store
 oldscope
@@ -30,17 +30,16 @@ putA 0
 get push
 putS 123/456
 putS home
-invoke 2 1
+invoke 2
 get push
 putS 321/654
 putS other
-invoke 2 1
+invoke 2
 store
 reserve func
-load func
 putM __func1__.cl0
 store
 load func
 load array
-invoke 1 1
+invoke 1
 pop

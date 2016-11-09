@@ -1,18 +1,18 @@
 reserve System
 load java
 putS java.lang.System
-invoke 1 1
+invoke 1
 store
 reserve Scanner
 load java
 putS java.util.Scanner
-invoke 1 1
+invoke 1
 store
 reserve scanner
 load Scanner
 load System
 get in
-invoke 1 1
+invoke 1
 store
 reserve read
 load scanner
@@ -20,5 +20,5 @@ get nextLine
 store
 reserve test
 load read
-invoke 0 1
+invoke 0
 store
