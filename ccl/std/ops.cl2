@@ -10,3 +10,5 @@
 #defop < lss
 #defop > gtr
 #defop == equals
+
+#defop ! not
