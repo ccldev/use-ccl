@@ -1,0 +1,36 @@
+reserve println
+putI 0
+store
+reserve read
+putI 0
+store
+newscope
+reserve System
+load java
+putS java.lang.System
+invoke 1
+store
+load println
+load System
+get out
+get println
+store
+load read
+load java
+putS java.util.Scanner
+invoke 1
+load System
+get in
+invoke 1
+get nextLine
+store
+oldscope
+reserve r
+load regex
+putS Ich bin ([a-zA-Z]+)
+invoke 1
+store
+load println
+load r
+invoke 1
+pop

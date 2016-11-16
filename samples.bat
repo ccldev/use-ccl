@@ -7,3 +7,4 @@ call ccl samples/defaultParamSample.cl2
 call ccl samples/handleErrors.cl2
 call ccl samples/throwSample.cl2
 call ccl samples/propertySample.cl2
+call ccl samples/regexSample.cl2
