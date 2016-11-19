@@ -1,9 +1,7 @@
 reserve println
-putI 0
-store
+pop
 reserve read
-putI 0
-store
+pop
 newscope
 reserve System
 load java
@@ -14,6 +12,16 @@ load println
 load System
 get out
 get println
+store
+load print
+load System
+get out
+get print
+store
+load printf
+load System
+get out
+get printf
 store
 load read
 load java
@@ -43,10 +51,12 @@ invoke 1
 if _if_1_
 goto _if_1_end_
 mark _if_1_
+newscope
 load println
 putS UNEXPECTED!!!!
 invoke 1
 pop
+oldscope
 mark _if_1_end_
 reserve err
 load undefined
@@ -60,6 +70,7 @@ invoke 1
 if _if_2_
 goto _if_2_end_
 mark _if_2_
+newscope
 load println
 putS EXPECTED \:)
 invoke 1
@@ -69,4 +80,5 @@ load err
 get data
 invoke 1
 pop
+oldscope
 mark _if_2_end_

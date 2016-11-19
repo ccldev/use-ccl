@@ -2,11 +2,9 @@ reserve Vector2
 putM __func1__.cl0
 store
 reserve println
-putI 0
-store
+pop
 reserve read
-putI 0
-store
+pop
 newscope
 reserve System
 load java
@@ -17,6 +15,16 @@ load println
 load System
 get out
 get println
+store
+load print
+load System
+get out
+get print
+store
+load printf
+load System
+get out
+get printf
 store
 load read
 load java
