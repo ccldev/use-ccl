@@ -1,0 +1,156 @@
+reserve println
+pop
+reserve read
+pop
+newscope
+reserve System
+load java
+putS java.lang.System
+invoke 1
+store
+load println
+load System
+get out
+get println
+store
+load print
+load System
+get out
+get print
+store
+load printf
+load System
+get out
+get printf
+store
+load read
+load java
+putS java.util.Scanner
+invoke 1
+load System
+get in
+invoke 1
+get nextLine
+store
+oldscope
+reserve a
+putI 1
+store
+load println
+putS Expected: 1; 1; undefined; 1
+invoke 1
+pop
+load println
+load a
+invoke 1
+pop
+newscope
+load println
+load a
+invoke 1
+pop
+reserve a
+pop
+load println
+load a
+invoke 1
+pop
+oldscope
+load println
+load a
+invoke 1
+pop
+putA 0
+get push
+putI 1
+putS a
+invoke 2
+get push
+putI 2
+putS b
+invoke 2
+get push
+putI 4
+putS c
+invoke 2
+get push
+putI 8
+putS d
+invoke 2
+get push
+putI 16
+putS e
+invoke 2
+reserve a
+pop
+duplicate
+get a
+load a
+store1
+reserve d
+pop
+duplicate
+get d
+load d
+store1
+pop
+load println
+putS Expected: 1; 8
+invoke 1
+pop
+load println
+load a
+invoke 1
+pop
+load println
+load d
+invoke 1
+pop
+putA 0
+get push
+putI 9
+putS a
+invoke 2
+get push
+putI 8
+putS b
+invoke 2
+get push
+putI 7
+putS c
+invoke 2
+reserve varName
+pop
+duplicate
+get a
+load varName
+store1
+reserve var2
+pop
+duplicate
+get b
+load var2
+store1
+reserve c
+pop
+duplicate
+get c
+load c
+store1
+pop
+load println
+putS Expected: 9; 8; 7
+invoke 1
+pop
+load println
+load varName
+invoke 1
+pop
+load println
+load var2
+invoke 1
+pop
+load println
+load c
+invoke 1
+pop
