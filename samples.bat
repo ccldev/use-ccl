@@ -9,3 +9,4 @@ call ccl samples/throwSample.cl2
 call ccl samples/propertySample.cl2
 call ccl samples/regexSample.cl2
 call ccl samples/newVariableSample.cl2
+call ccl samples/elseSample.cl2

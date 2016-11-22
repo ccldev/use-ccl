@@ -1,0 +1,53 @@
+reserve println
+pop
+reserve read
+pop
+newscope
+reserve System
+load java
+putS java.lang.System
+invoke 1
+store
+load println
+load System
+get out
+get println
+store
+load print
+load System
+get out
+get print
+store
+load printf
+load System
+get out
+get printf
+store
+load read
+load java
+putS java.util.Scanner
+invoke 1
+load System
+get in
+invoke 1
+get nextLine
+store
+oldscope
+load boolean
+load read
+invoke 0
+invoke 1
+if _if_1_
+load println
+putS Oh, not true...
+invoke 1
+pop
+goto _if_1_end_
+mark _if_1_
+newscope
+load println
+putS Yay, true!
+invoke 1
+pop
+oldscope
+mark _if_1_end_
