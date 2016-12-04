@@ -1,12 +1,6 @@
-var println = undefined;
-var read = undefined;
-
+var println,printf,print,read;
 {
     var System = java("java.lang.System");
-    
-    println = System.out.println;
-    print = System.out.print;
-    printf = System.out.printf;
-    
+    var [!println,!printf,!print] = System.out;
     read = java("java.util.Scanner")(System.in).nextLine;
 }
