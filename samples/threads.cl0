@@ -1,0 +1,79 @@
+reserve println
+pop
+reserve read
+pop
+newscope
+reserve System
+load java
+putS java.lang.System
+invoke 1
+store
+load println
+load System
+get out
+get println
+store
+load print
+load System
+get out
+get print
+store
+load printf
+load System
+get out
+get printf
+store
+load read
+load java
+putS java.util.Scanner
+invoke 1
+load System
+get in
+invoke 1
+get nextLine
+store
+oldscope
+reserve Thread
+pop
+newscope
+reserve runnable
+load java
+putS java.lang.Runnable
+invoke 1
+store
+reserve t
+load java
+putS java.lang.Thread
+invoke 1
+store
+reserve T
+putM __func1__.cl0
+store
+load Thread
+load T
+get bind
+load runnable
+load t
+invoke 2
+store
+oldscope
+reserve calcThread
+putM __func2__.cl0
+store
+reserve outThread
+putM __func3__.cl0
+store
+load Thread
+load calcThread
+putS CalcThread
+invoke 2
+get start
+invoke 0
+pop
+load Thread
+load outThread
+putS OutThread
+invoke 2
+get start
+invoke 0
+pop
