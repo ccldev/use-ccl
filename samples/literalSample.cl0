@@ -37,37 +37,25 @@ invoke 1
 get nextLine
 store
 oldscope
-reserve struct
+reserve List
 putM __func1__.cl0
 store
-reserve Person
-load struct
+reserve myList
+load List
 putA 0
 get push
-putS firstName
+putI 1
 invoke 1
 get push
-putS lastName
+putI 3
 invoke 1
 get push
-putS age
+putI 2
 invoke 1
 invoke 1
 store
-reserve hans
-load Person
-putS Hans
-putS Müller
-putI 30
-invoke 3
-store
 load println
-get for
-load hans
-invoke 1
-pop
-load println
-load hans
-get lastName
+load myList
+get data
 invoke 1
 pop

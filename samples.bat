@@ -11,3 +11,4 @@ call ccl samples/regexSample.cl2
 call ccl samples/newVariableSample.cl2
 call ccl samples/elseSample.cl2
 call ccl samples/threads.cl2
+call ccl samples/literalSample.cl2

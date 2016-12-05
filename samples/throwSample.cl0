@@ -1,5 +1,9 @@
 reserve println
 pop
+reserve printf
+pop
+reserve print
+pop
 reserve read
 pop
 newscope
@@ -8,21 +12,21 @@ load java
 putS java.lang.System
 invoke 1
 store
-load println
 load System
 get out
+duplicate
 get println
-store
-load print
-load System
-get out
-get print
-store
-load printf
-load System
-get out
+load println
+store1
+duplicate
 get printf
-store
+load printf
+store1
+duplicate
+get print
+load print
+store1
+pop
 load read
 load java
 putS java.util.Scanner
