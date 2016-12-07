@@ -1,0 +1,66 @@
+reserve println
+pop
+reserve printf
+pop
+reserve print
+pop
+reserve read
+pop
+newscope
+reserve System
+load java
+putS java.lang.System
+invoke 1
+store
+load System
+get out
+duplicate
+get println
+load println
+store1
+duplicate
+get printf
+load printf
+store1
+duplicate
+get print
+load print
+store1
+pop
+load read
+load java
+putS java.util.Scanner
+invoke 1
+load System
+get in
+invoke 1
+get nextLine
+store
+oldscope
+reserve i
+putI 0
+store
+mark start
+load println
+putS Wuhu, Loop!!
+invoke 1
+pop
+load i
+load i
+get add
+putI 1
+invoke 1
+store
+load i
+get gtr
+putI 100
+invoke 1
+if _if_1_
+goto _if_1_end_
+mark _if_1_
+newscope
+goto end
+oldscope
+mark _if_1_end_
+goto start
+mark end
