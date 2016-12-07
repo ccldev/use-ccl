@@ -1,0 +1,48 @@
+reserve println
+pop
+reserve printf
+pop
+reserve print
+pop
+reserve read
+pop
+newscope
+reserve System
+load java
+putS java.lang.System
+invoke 1
+store
+load System
+get out
+duplicate
+get println
+load println
+store1
+duplicate
+get printf
+load printf
+store1
+duplicate
+get print
+load print
+store1
+pop
+load read
+load java
+putS java.util.Scanner
+invoke 1
+load System
+get in
+invoke 1
+get nextLine
+store
+oldscope
+reserve factorial
+putM __func1__.cl0
+store
+load println
+load factorial
+putI 6
+invoke 1
+invoke 1
+pop
