@@ -64,6 +64,6 @@ invoke 1
 pop
 load withDefaults
 putS Susi
-putS Hi 
+putS Hi \
 invoke 2
 pop
