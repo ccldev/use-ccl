@@ -1,0 +1,1 @@
+call ccl samples/ui/chartSample.cl2

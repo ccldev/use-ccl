@@ -1,0 +1,123 @@
+reserve Launcher
+putM __func1__.cl0
+store
+reserve JUI
+pop
+newscope
+reserve new
+putM __func3__.cl0
+store
+reserve layout
+putM __func4__.cl0
+store
+load layout
+load new
+get bind
+load layout
+get _
+putA 0
+invoke 2
+store
+reserve control
+putM __func5__.cl0
+store
+load control
+load new
+get bind
+load control
+get _
+putA 0
+invoke 2
+store
+reserve EventHandler
+putM __func6__.cl0
+store
+load JUI
+putA 0
+get push
+load layout
+putS layout
+invoke 2
+get push
+load control
+putS control
+invoke 2
+get push
+load java
+putS javafx.scene.Scene
+invoke 1
+putS Scene
+invoke 2
+get push
+load EventHandler
+get bind
+load java
+putS javafx.event.EventHandler
+invoke 1
+invoke 1
+putS EventHandler
+invoke 2
+store
+oldscope
+newscope
+reserve chart
+putM __func7__.cl0
+store
+load JUI
+get setProperty
+putS chart
+load chart
+invoke 2
+pop
+oldscope
+reserve XYChart
+load JUI
+get chart
+putS XYChart
+invoke 1
+store
+reserve XYSeries
+pop
+newscope
+reserve Series
+putM __func8__.cl0
+store
+load XYSeries
+load Series
+get bind
+load XYChart
+get Series
+load XYChart
+get Data
+invoke 2
+store
+oldscope
+reserve SimpleChart
+pop
+newscope
+reserve NumAxis
+load JUI
+get chart
+putS NumberAxis
+invoke 1
+store
+reserve make
+putM __func10__.cl0
+store
+load SimpleChart
+load make
+get bind
+load NumAxis
+invoke 1
+store
+oldscope
+reserve start
+putM __func11__.cl0
+store
+load Launcher
+invoke 0
+get launch
+load start
+putA 0
+invoke 2
+pop
