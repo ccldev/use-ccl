@@ -11,3 +11,6 @@
 #defop > gtr
 #defop == equals
 #defop ! not
+
+#defop => nvp
+#defop & concat
