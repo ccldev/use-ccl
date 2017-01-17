@@ -1,3 +1,4 @@
+sPut samples/newVariableSample.cl2
 reserve println
 pop
 reserve printf
@@ -158,3 +159,4 @@ load println
 load c
 invoke 1
 pop
+sPop

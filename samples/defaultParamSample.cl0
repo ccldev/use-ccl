@@ -1,3 +1,4 @@
+sPut samples/defaultParamSample.cl2
 reserve println
 pop
 reserve printf
@@ -38,10 +39,10 @@ get nextLine
 store
 oldscope
 reserve normal
-putM __func1__.cl0
+putM __normal_1__.cl0
 store
 reserve withDefaults
-putM __func2__.cl0
+putM __withDefaults_2__.cl0
 store
 load normal
 invoke 0
@@ -67,3 +68,4 @@ putS Susi
 putS Hi \
 invoke 2
 pop
+sPop

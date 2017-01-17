@@ -1,3 +1,4 @@
+sPut testCases\primitives.cl2
 reserve println
 pop
 reserve printf
@@ -73,3 +74,4 @@ invoke 0
 get type
 invoke 1
 pop
+sPop

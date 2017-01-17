@@ -1,3 +1,4 @@
+sPut samples/customSyntaxSample.cl2
 reserve println
 pop
 reserve printf
@@ -64,3 +65,4 @@ oldscope
 mark _if_1_end_
 goto start
 mark end
+sPop

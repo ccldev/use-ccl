@@ -1,3 +1,4 @@
+sPut samples/helloWorld.cl2
 reserve println
 pop
 reserve printf
@@ -41,3 +42,4 @@ load println
 putS Hello World
 invoke 1
 pop
+sPop

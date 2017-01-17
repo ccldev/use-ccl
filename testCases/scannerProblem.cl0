@@ -1,3 +1,4 @@
+sPut testCases\scannerProblem.cl2
 reserve System
 load java
 putS java.lang.System
@@ -22,3 +23,4 @@ reserve test
 load read
 invoke 0
 store
+sPop

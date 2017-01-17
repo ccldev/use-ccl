@@ -1,3 +1,4 @@
+sPut samples/factorialSample.cl2
 reserve println
 pop
 reserve printf
@@ -38,7 +39,7 @@ get nextLine
 store
 oldscope
 reserve factorial
-putM __func1__.cl0
+putM __factorial_1__.cl0
 store
 load println
 load factorial
@@ -46,3 +47,4 @@ putI 6
 invoke 1
 invoke 1
 pop
+sPop

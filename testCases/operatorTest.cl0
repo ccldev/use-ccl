@@ -1,5 +1,6 @@
+sPut testCases\operatorTest.cl2
 reserve Vector2
-putM __func1__.cl0
+putM __Vector2_1__.cl0
 store
 reserve println
 pop
@@ -96,3 +97,4 @@ putI 4
 invoke 1
 invoke 1
 pop
+sPop

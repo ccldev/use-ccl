@@ -1,14 +1,15 @@
+sPut samples/ui/chartSample.cl2
 reserve Launcher
-putM __func1__.cl0
+putM __Launcher_1__.cl0
 store
 reserve JUI
 pop
 newscope
 reserve new
-putM __func3__.cl0
+putM __new_3__.cl0
 store
 reserve layout
-putM __func4__.cl0
+putM __layout_4__.cl0
 store
 load layout
 load new
@@ -19,7 +20,7 @@ putA 0
 invoke 2
 store
 reserve control
-putM __func5__.cl0
+putM __control_5__.cl0
 store
 load control
 load new
@@ -30,7 +31,7 @@ putA 0
 invoke 2
 store
 reserve EventHandler
-putM __func6__.cl0
+putM __EventHandler_6__.cl0
 store
 load JUI
 putA 0
@@ -61,7 +62,7 @@ store
 oldscope
 newscope
 reserve chart
-putM __func7__.cl0
+putM __chart_7__.cl0
 store
 load JUI
 get setProperty
@@ -80,7 +81,7 @@ reserve XYSeries
 pop
 newscope
 reserve Series
-putM __func8__.cl0
+putM __Series_8__.cl0
 store
 load XYSeries
 load Series
@@ -102,7 +103,7 @@ putS NumberAxis
 invoke 1
 store
 reserve make
-putM __func10__.cl0
+putM __make_10__.cl0
 store
 load SimpleChart
 load make
@@ -112,7 +113,7 @@ invoke 1
 store
 oldscope
 reserve start
-putM __func11__.cl0
+putM __start_11__.cl0
 store
 load Launcher
 invoke 0
@@ -121,3 +122,4 @@ load start
 putA 0
 invoke 2
 pop
+sPop

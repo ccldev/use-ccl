@@ -1,3 +1,4 @@
+sPut samples/propertySample.cl2
 reserve println
 pop
 reserve printf
@@ -38,7 +39,7 @@ get nextLine
 store
 oldscope
 reserve struct
-putM __func1__.cl0
+putM __struct_1__.cl0
 store
 reserve Number
 load struct
@@ -116,3 +117,4 @@ store
 oldscope
 goto _while_2_start
 mark _while_2_end
+sPop

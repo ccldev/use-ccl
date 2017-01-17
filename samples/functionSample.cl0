@@ -1,3 +1,4 @@
+sPut samples/functionSample.cl2
 reserve println
 pop
 reserve printf
@@ -38,8 +39,9 @@ get nextLine
 store
 oldscope
 reserve printHello
-putM __func1__.cl0
+putM __printHello_1__.cl0
 store
 load printHello
 invoke 0
 pop
+sPop

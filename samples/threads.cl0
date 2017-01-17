@@ -1,3 +1,4 @@
+sPut samples/threads.cl2
 reserve println
 pop
 reserve printf
@@ -51,7 +52,7 @@ putS java.lang.Thread
 invoke 1
 store
 reserve T
-putM __func1__.cl0
+putM __T_1__.cl0
 store
 load Thread
 load T
@@ -62,10 +63,10 @@ invoke 2
 store
 oldscope
 reserve calcThread
-putM __func2__.cl0
+putM __calcThread_2__.cl0
 store
 reserve outThread
-putM __func3__.cl0
+putM __outThread_3__.cl0
 store
 load Thread
 load calcThread
@@ -81,3 +82,4 @@ invoke 2
 get start
 invoke 0
 pop
+sPop

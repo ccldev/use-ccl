@@ -1,3 +1,4 @@
+sPut samples/elseSample.cl2
 reserve println
 pop
 reserve printf
@@ -57,3 +58,4 @@ invoke 1
 pop
 oldscope
 mark _if_1_end_
+sPop

@@ -1,3 +1,4 @@
+sPut testCases\colonProblem.cl2
 reserve System
 load java
 putS java.lang.System
@@ -22,3 +23,4 @@ load in
 invoke 1
 invoke 1
 pop
+sPop

@@ -1,3 +1,4 @@
+sPut samples/structSample.cl2
 reserve println
 pop
 reserve printf
@@ -38,7 +39,7 @@ get nextLine
 store
 oldscope
 reserve struct
-putM __func1__.cl0
+putM __struct_1__.cl0
 store
 reserve Person
 load struct
@@ -71,3 +72,4 @@ load hans
 get lastName
 invoke 1
 pop
+sPop

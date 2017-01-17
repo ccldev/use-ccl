@@ -1,3 +1,4 @@
+sPut samples/castSample.cl2
 reserve println
 pop
 reserve printf
@@ -38,7 +39,7 @@ get nextLine
 store
 oldscope
 load println
-putS Expected\: number, number, false, boolean
+putS Expected\: number, number, 0.0, number
 invoke 1
 pop
 load println
@@ -68,3 +69,4 @@ invoke 1
 get type
 invoke 1
 pop
+sPop

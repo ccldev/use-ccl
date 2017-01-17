@@ -1,3 +1,4 @@
+sPut testCases\innerArrayProblem.cl2
 reserve println
 pop
 reserve printf
@@ -89,3 +90,4 @@ invoke 1
 invoke 1
 invoke 1
 pop
+sPop

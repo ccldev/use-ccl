@@ -1,3 +1,4 @@
+sPut samples/throwSample.cl2
 reserve println
 pop
 reserve printf
@@ -38,7 +39,7 @@ get nextLine
 store
 oldscope
 reserve errorOnUndefined
-putM __func1__.cl0
+putM __errorOnUndefined_1__.cl0
 store
 load errorOnUndefined
 putS Should work
@@ -51,3 +52,4 @@ pop
 load errorOnUndefined
 invoke 0
 pop
+sPop

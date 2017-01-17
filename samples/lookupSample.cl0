@@ -1,3 +1,4 @@
+sPut samples/lookupSample.cl2
 reserve println
 pop
 reserve printf
@@ -38,7 +39,7 @@ get nextLine
 store
 oldscope
 reserve struct
-putM __func1__.cl0
+putM __struct_1__.cl0
 store
 reserve Name
 load struct
@@ -85,3 +86,4 @@ load println
 load lookup
 invoke 1
 pop
+sPop
