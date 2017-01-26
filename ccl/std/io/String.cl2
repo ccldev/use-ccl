@@ -39,13 +39,13 @@ def String(){
 	return ret._;
 }
 
-String = String._.extend(IOBase._);
+String = String.extend(IOBase);
 
 {
 	def StringExtension(this, rawString){
 		if(rawString.type == "string"){
-			this.append(rawString);
+			this.writeString(rawString);
 		}
 	}
-	String = String._.extend(StringExtension._);
+	String = String.extend(StringExtension);
 }

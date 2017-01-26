@@ -7,9 +7,9 @@ def URL(rawUrl){
 		return this.java.openStream().read;
 	}
 	
-	ret._.push(reader._.bind(ret._), "reader");
+	ret.push(reader.bind(ret), "reader");
 	
-	return ret._;
+	return ret;
 }
 
-URL = URL._.extend(IOBase._);
+URL = URL.extend(IOBase);
