@@ -14,6 +14,7 @@ def File(filePath){
 	
 	ret.push(writer.bind(ret), "writer");
 	ret.push(reader.bind(ret), "reader");
+	ret.push(ret.java.exists, "exists");
 	
 	return ret;
 	
