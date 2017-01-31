@@ -27,6 +27,13 @@ var JUI;
 	
 	control = new.bind(control._, []);
 	
+	//Search
+	def search(name){
+		return java("io.github.coalangsoft.jsearchfx.ui.".concat(name));
+	}
+	
+	search = new.bind(search._, []);
+	
 	def EventHandler(clss, func){
 		return clss([
 			handle:func
@@ -36,6 +43,7 @@ var JUI;
 	JUI = [
 		layout:layout,
 		control:control,
+		search:search,
 		Scene:java("javafx.scene.Scene"),
 		EventHandler:EventHandler.bind(java("javafx.event.EventHandler"))
 	];
