@@ -12,9 +12,15 @@ def File(filePath){
 		return java("java.io.FileInputStream")(this.java).read;
 	}
 	
+	def toUrl(this){
+		return this.java.toURI().toURL().toExternalForm();
+	}
+	
 	ret.push(writer.bind(ret), "writer");
 	ret.push(reader.bind(ret), "reader");
 	ret.push(ret.java.exists, "exists");
+	ret.push(ret.java.getName, "getName");
+	ret.push(toUrl.bind(ret), "toUrl");
 	
 	return ret;
 	
