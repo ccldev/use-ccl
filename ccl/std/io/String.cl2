@@ -17,14 +17,13 @@ def String(){
 	}
 	
 	def rf(this){
+		if(this.list.length() == this.index){
+			return integer("-1");
+		}
 		var c = char2int(
 			this.charAt(this.index)
 		);
-		if(c._ < 0){
-			return integer("-1");
-		}else{
-			this.setProperty("index", this.index + 1);
-		}
+		this.setProperty("index", this.index + 1);
 		return c._;
 	}
 	

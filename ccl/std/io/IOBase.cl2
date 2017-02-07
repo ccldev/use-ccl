@@ -13,15 +13,21 @@ def IOBase(this){
 		var r = [];
 		while(true){
 			i = streamReader();
-			if(i < 0){
-				return r;
+			if(i < 0 - 1){
+				r.push(filter(i));
+			}else{
+				if(i < 0){
+					return r;
+				}
+				r.push(filter(i));
 			}
-			r.push(filter(i));
 		}
 	}
 	
-	def writeString(this, rawString){
-		this.writer().for(char2int.for(array(rawString.toCharArray())));
+	def writeString(this, rawString, format:"ASCII"){
+		this.writer().for(array(rawString.getBytes(format)));
+		println(this);
+		return this;
 	}
 	
 	def buildString(this, format:"ASCII"){
