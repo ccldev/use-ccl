@@ -30,6 +30,10 @@ def IOBase(this){
 		return this;
 	}
 	
+	def writeFormattedString(this, format, rawString){
+		return this.writeString(rawString, format);
+	}
+	
 	def buildString(this, format:"ASCII"){
 		return java("java.lang.String")(byte.for(this.stream()), format);
 	}
@@ -38,5 +42,6 @@ def IOBase(this){
 	this.push(stream.bind(this), "stream");
 	this.push(writeString.bind(this), "writeString");
 	this.push(buildString.bind(this), "buildString");
+	this.push(writeFormattedString.bind(this), "writeFormattedString");
 	
 }
