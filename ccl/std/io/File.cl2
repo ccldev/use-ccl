@@ -21,6 +21,10 @@ def File(filePath){
 	ret.push(ret.java.exists, "exists");
 	ret.push(ret.java.getName, "getName");
 	ret.push(toUrl.bind(ret), "toUrl");
+	ret.push(<j|j.getParent().equals(j)!>.bind(ret.java), "hasParent");
+	ret.push(<j|File(j.getParent())>.bind(ret.java), "getParent");
+	ret.push(ret.java.mkdirs, "createDirectory");
+	ret.push(ret.java.createNewFile, "createFile");
 	
 	return ret;
 	

@@ -26,7 +26,6 @@ def IOBase(this){
 	
 	def writeString(this, rawString, format:"ASCII"){
 		this.writer().for(array(rawString.getBytes(format)));
-		println(this);
 		return this;
 	}
 	
