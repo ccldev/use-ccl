@@ -2,6 +2,7 @@
 #defop - sub
 #defop * mul
 #defop / div
+#defop % mod
 
 #defop ^ pow
 #defop ++ incr

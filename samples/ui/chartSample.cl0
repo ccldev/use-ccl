@@ -6,10 +6,10 @@ reserve JUI
 pop
 newscope
 reserve new
-putM __new_3__.cl0
+putM __new_4__.cl0
 store
 reserve layout
-putM __layout_4__.cl0
+putM __layout_5__.cl0
 store
 load layout
 load new
@@ -20,7 +20,7 @@ putA 0
 invoke 2
 store
 reserve control
-putM __control_5__.cl0
+putM __control_6__.cl0
 store
 load control
 load new
@@ -30,8 +30,41 @@ get _
 putA 0
 invoke 2
 store
+reserve search
+putM __search_7__.cl0
+store
+load search
+load new
+get bind
+load search
+get _
+putA 0
+invoke 2
+store
+reserve image
+putM __image_8__.cl0
+store
+load image
+load new
+get bind
+load image
+get _
+putA 0
+invoke 2
+store
+reserve media
+putM __media_9__.cl0
+store
+load media
+load new
+get bind
+load media
+get _
+putA 0
+invoke 2
+store
 reserve EventHandler
-putM __EventHandler_6__.cl0
+putM __EventHandler_10__.cl0
 store
 load JUI
 putA 0
@@ -42,6 +75,18 @@ invoke 2
 get push
 load control
 putS control
+invoke 2
+get push
+load search
+putS search
+invoke 2
+get push
+load media
+putS media
+invoke 2
+get push
+load image
+putS image
 invoke 2
 get push
 load java
@@ -58,11 +103,23 @@ invoke 1
 invoke 1
 putS EventHandler
 invoke 2
+get push
+load java
+putS javafx.stage.FileChooser
+invoke 1
+putS FileChooser
+invoke 2
+get push
+load java
+putS javafx.scene.text.Font
+invoke 1
+putS Font
+invoke 2
 store
 oldscope
 newscope
 reserve chart
-putM __chart_7__.cl0
+putM __chart_11__.cl0
 store
 load JUI
 get setProperty
@@ -81,7 +138,7 @@ reserve XYSeries
 pop
 newscope
 reserve Series
-putM __Series_8__.cl0
+putM __Series_12__.cl0
 store
 load XYSeries
 load Series
@@ -103,7 +160,7 @@ putS NumberAxis
 invoke 1
 store
 reserve make
-putM __make_10__.cl0
+putM __make_14__.cl0
 store
 load SimpleChart
 load make
@@ -113,7 +170,7 @@ invoke 1
 store
 oldscope
 reserve start
-putM __start_11__.cl0
+putM __start_15__.cl0
 store
 load Launcher
 invoke 0
