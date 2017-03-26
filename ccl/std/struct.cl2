@@ -1,12 +1,12 @@
 def struct(array){
 	
-	def retFunc(args){
+	def retFunc(){
 		
 		var ret = [];
 		
 		var i = 0;
-		while(i.lss(args.length())){
-			ret.push(parameters.get(i.add(1)), args.get(i));
+		while(i.lss(array.length())){
+			ret.push(parameters.get(i), array.get(i));
 			i = i.add(1);
 		}
 		
@@ -14,6 +14,6 @@ def struct(array){
 		
 	}
 	
-	return retFunc.bind(array);
+	return retFunc;
     
 }

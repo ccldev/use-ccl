@@ -113,7 +113,7 @@ get push
 load java
 putS javafx.scene.text.Font
 invoke 1
-putS Font
+putS FileChooser
 invoke 2
 store
 oldscope

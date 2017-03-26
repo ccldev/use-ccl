@@ -1,41 +1,41 @@
 #include <io/IOBase>
 
 def String(){
-	var ret = [list:[], index:0];
+	var this = [list:[], index:0];
 	
-	def writer(this){
+	def writer(){
 		return this.list.push;
 	}
 	
-	def charAt(this){
-		var d = this.list[this.index];
-		if(d._.type == "error"){
-			return integer("-1");
+	def charAt(index){
+		var d = this.list[index];
+		if(d.type == "error"){
+			return -1;
 		}else{
-			return d._;
+			return d;
 		}
 	}
 	
-	def rf(this){
+	def rf(){
 		if(this.list.length() == this.index){
-			return integer("-1");
+			return -1;
 		}
 		var c = char2int(
 			this.charAt(this.index)
 		);
 		this.setProperty("index", this.index + 1);
-		return c._;
+		return c;
 	}
 	
-	def reader(rf, this){
-		return rf.bind(this._);
+	def reader(){
+		return rf;
 	}
 	
-	ret.push(writer.bind(ret), "writer");
-	ret.push(charAt.bind(ret), "charAt");
-	ret.push(reader.bind(rf._, ret), "reader");
+	this.push(writer, "writer");
+	this.push(charAt, "charAt");
+	this.push(reader, "reader");
 	
-	return ret._;
+	return this;
 }
 
 String = String.extend(IOBase);

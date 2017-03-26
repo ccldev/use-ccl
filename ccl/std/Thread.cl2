@@ -1,12 +1,12 @@
 var Thread;
 {
-	var runnable = java("java.lang.Runnable");
+	var r = java("java.lang.Runnable");
 	var t = java("java.lang.Thread");
 	
-	def T(r,t,f,name){
+	def T(f,name){
 		var ret = t(
 			r([
-				run:f._
+				run:f
 			])
 		);
 		ret.setName(name);
@@ -15,5 +15,5 @@ var Thread;
 		];
 	}
 	
-	Thread = T.bind(runnable,t);
+	Thread = T;
 }

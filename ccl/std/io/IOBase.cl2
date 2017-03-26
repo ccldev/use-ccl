@@ -1,10 +1,10 @@
 def IOBase(this){
 	
-	def downloadFrom(this, downloadFromUrl){
+	def downloadFrom(downloadFromUrl){
 		return this.writer().for(downloadFromUrl.stream());
 	}
 	
-	def stream(this, filter:<v|v>){
+	def stream(filter:<v|v>){
 		var streamReader = this.reader();
 		if(streamReader.type == "error"){
 			return streamReader;
@@ -13,34 +13,31 @@ def IOBase(this){
 		var r = [];
 		while(true){
 			i = streamReader();
-			if(i < 0 - 1){
-				r.push(filter(i));
+			if(i == -1){
+				return r;
 			}else{
-				if(i < 0){
-					return r;
-				}
 				r.push(filter(i));
 			}
 		}
 	}
 	
-	def writeString(this, rawString, format:"ASCII"){
+	def writeString(rawString, format:"ASCII"){
 		this.writer().for(array(rawString.getBytes(format)));
 		return this;
 	}
 	
-	def writeFormattedString(this, format, rawString){
+	def writeFormattedString(format, rawString){
 		return this.writeString(rawString, format);
 	}
 	
-	def buildString(this, format:"ASCII"){
+	def buildString(format:"ASCII"){
 		return java("java.lang.String")(byte.for(this.stream()), format);
 	}
 	
-	this.push(downloadFrom.bind(this), "downloadFrom");
-	this.push(stream.bind(this), "stream");
-	this.push(writeString.bind(this), "writeString");
-	this.push(buildString.bind(this), "buildString");
-	this.push(writeFormattedString.bind(this), "writeFormattedString");
+	this.push(downloadFrom, "downloadFrom");
+	this.push(stream, "stream");
+	this.push(writeString, "writeString");
+	this.push(buildString, "buildString");
+	this.push(writeFormattedString, "writeFormattedString");
 	
 }

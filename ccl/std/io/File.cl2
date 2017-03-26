@@ -2,35 +2,32 @@
 
 def File(filePath){
 	
-	var ret = [java:java("java.io.File")(filePath)];
+	var this = [java:java("java.io.File")(filePath)];
 	
-	def writer(this){
+	def writer(){
 		return java("java.io.FileOutputStream")(this.java).write;
 	}
 	
-	def reader(this){
+	def reader(){
 		return java("java.io.FileInputStream")(this.java).read;
 	}
 	
-	def toUrl(this){
+	def toUrl(){
 		return this.java.toURI().toURL().toExternalForm();
 	}
 	
-	ret.push(writer.bind(ret), "writer");
-	ret.push(reader.bind(ret), "reader");
-	ret.push(ret.java.exists, "exists");
-	ret.push(ret.java.getName, "getName");
-    ret.push(ret.java.getPath, "getPath");
-    ret.push(ret.java.getAbsolutePath, "getAbsolutePath");
-	ret.push(toUrl.bind(ret), "toUrl");
-	ret.push(<j|j.getParent().equals(j)!>.bind(ret.java), "hasParent");
-	ret.push(<j|File(j.getParent())>.bind(ret.java), "getParent");
-	ret.push(ret.java.mkdirs, "createDirectory");
-	ret.push(ret.java.createNewFile, "createFile");
-    ret.push(<j|File.for(array(j.list()))>.bind(ret.java), "list");
+	this.push(writer, "writer");
+	this.push(reader, "reader");
+	this.push(this.java.exists, "exists");
+	this.push(this.java.getName, "getName");
+	this.push(toUrl, "toUrl");
+	this.push(<j|j.getParent().equals(j)!>.bind(this.java), "hasParent");
+	this.push(<j|File(j.getParent())>.bind(this.java), "getParent");
+	this.push(this.java.mkdirs, "createDirectory");
+	this.push(this.java.createNewFile, "createFile");
 	
-	return ret;
+	return this;
 	
 }
 
-File = File._.extend(IOBase._);
+File = File.extend(IOBase);

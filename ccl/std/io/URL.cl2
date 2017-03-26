@@ -1,15 +1,15 @@
 #include <io/IOBase>
 
 def URL(rawUrl){
-	var ret = [java:java("java.net.URL")(rawUrl)];
+	var this = [java:java("java.net.URL")(rawUrl)];
 	
-	def reader(this){
+	def reader(){
 		return this.java.openStream().read;
 	}
 	
-	ret.push(reader.bind(ret), "reader");
+	this.push(reader, "reader");
 	
-	return ret;
+	return this;
 }
 
 URL = URL.extend(IOBase);

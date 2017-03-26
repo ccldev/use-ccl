@@ -58,6 +58,6 @@ var JUI;
 		Scene:java("javafx.scene.Scene"),
 		EventHandler:EventHandler.bind(java("javafx.event.EventHandler")),
 		FileChooser:java("javafx.stage.FileChooser"),
-		Font:java("javafx.scene.text.Font")
+		FileChooser:java("javafx.scene.text.Font")
 	];
 }

@@ -41,7 +41,7 @@ oldscope
 reserve Thread
 pop
 newscope
-reserve runnable
+reserve r
 load java
 putS java.lang.Runnable
 invoke 1
@@ -56,10 +56,6 @@ putM __T_1__.cl0
 store
 load Thread
 load T
-get bind
-load runnable
-load t
-invoke 2
 store
 oldscope
 reserve calcThread
