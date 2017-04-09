@@ -39,7 +39,7 @@ get nextLine
 store
 oldscope
 load println
-putA 0
+putA
 get push
 putI 1
 invoke 1
@@ -50,7 +50,7 @@ get push
 putI 3
 invoke 1
 get push
-putA 0
+putA
 get push
 putI 4
 invoke 1
@@ -62,9 +62,9 @@ putI 6
 invoke 1
 invoke 1
 get push
-putA 0
+putA
 get push
-putA 0
+putA
 get push
 putI 7
 invoke 1
@@ -76,7 +76,7 @@ putI 9
 invoke 1
 invoke 1
 get push
-putA 0
+putA
 get push
 putI 10
 invoke 1

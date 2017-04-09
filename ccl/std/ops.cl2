@@ -5,8 +5,6 @@
 #defop % mod
 
 #defop ^ pow
-#defop ++ incr
-#defop -- decr
 
 #defop < lss
 #defop > gtr

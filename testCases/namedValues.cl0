@@ -39,7 +39,7 @@ get nextLine
 store
 oldscope
 reserve array
-putA 0
+putA
 get push
 putS 123/456
 putS home

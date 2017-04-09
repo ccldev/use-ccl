@@ -43,7 +43,7 @@ putM __struct_1__.cl0
 store
 reserve Number
 load struct
-putA 0
+putA
 get push
 putS vorwahl
 invoke 1
@@ -70,51 +70,10 @@ store
 reserve i
 putI 0
 store
-mark _while_2_start
-load i
-get lss
-load props
-get length
-invoke 0
+load while
+putM _lc0_.cl0
 invoke 1
-if _while_2_continue
-goto _while_2_end
-mark _while_2_continue
-newscope
-reserve toGet
-load props
-get get
-load i
+putM _w0_.cl0
 invoke 1
-store
-reserve value
-load num
-load toGet
-invoke 1
-store
-load println
-load String
-get valueOf
-load toGet
-invoke 1
-get concat
-putS \:\t
-invoke 1
-get concat
-load String
-get valueOf
-load value
-invoke 1
-invoke 1
-invoke 1
-pop
-load i
-load i
-get add
-putI 1
-invoke 1
-store
-oldscope
-goto _while_2_start
-mark _while_2_end
+nnr
 sPop

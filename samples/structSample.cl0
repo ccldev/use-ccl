@@ -43,7 +43,7 @@ putM __struct_1__.cl0
 store
 reserve Person
 load struct
-putA 0
+putA
 get push
 putS firstName
 invoke 1

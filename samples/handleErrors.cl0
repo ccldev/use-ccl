@@ -48,43 +48,30 @@ get add
 putI 5
 invoke 1
 store
+load if
 load working
 get type
 get equals
 putS error
 invoke 1
-if _if_1_
-goto _if_1_end_
-mark _if_1_
-newscope
-load println
-putS UNEXPECTED!!!!
 invoke 1
-pop
-oldscope
-mark _if_1_end_
+putM _i0_.cl0
+load undefined
+invoke 2
+nnr
 reserve err
 load undefined
 get someProperty
 store
+load if
 load err
 get type
 get equals
 putS error
 invoke 1
-if _if_2_
-goto _if_2_end_
-mark _if_2_
-newscope
-load println
-putS EXPECTED \:)
 invoke 1
-pop
-load println
-load err
-get data
-invoke 1
-pop
-oldscope
-mark _if_2_end_
+putM _i1_.cl0
+load undefined
+invoke 2
+nnr
 sPop

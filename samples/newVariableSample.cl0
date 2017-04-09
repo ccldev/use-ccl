@@ -65,7 +65,7 @@ load println
 load a
 invoke 1
 pop
-putA 0
+putA
 get push
 putI 1
 putS a
@@ -111,7 +111,7 @@ load println
 load d
 invoke 1
 pop
-putA 0
+putA
 get push
 putI 9
 putS a

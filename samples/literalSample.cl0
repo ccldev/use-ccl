@@ -43,7 +43,7 @@ putM __List_1__.cl0
 store
 reserve myList
 load List
-putA 0
+putA
 get push
 putI 1
 invoke 1
