@@ -1,7 +1,7 @@
 def struct(array){
 	
 	def retFunc(){
-		
+
 		var parameters = @;
 		var ret = [];
 		

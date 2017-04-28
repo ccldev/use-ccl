@@ -1,0 +1,1 @@
+return java("java.lang.System").exit(0);

@@ -1,6 +1,1 @@
-def Stream(javaStream){
-	return [
-		read:<|javaStream.read>,
-		write:<|javaStream.write>
-	];
-}
+var Stream = java("cpa.subos.io.IO").stream;

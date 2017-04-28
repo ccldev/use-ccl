@@ -1,7 +1,7 @@
 def List(data){
     
     def op(op,a,b){
-        if(b.LISTINFO.type == "boolean"){
+        if(b.LIST_INFO.type == "boolean"){
             return a[op](b.data);
         }else{
             if(a.data.length() == b.length()){
@@ -11,7 +11,7 @@ def List(data){
         }
     }
     
-    var ret = [LISTINFO:true, data:data];
+    var ret = [LIST_INFO:true, data:data];
     ret.push(op.bind("add", ret), "add");
     ret.push(op.bind("sub", ret), "sub");
     ret.push(op.bind("mul", ret), "mul");
