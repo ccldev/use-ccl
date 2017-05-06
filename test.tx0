@@ -1,4 +1,4 @@
-sPut samples/threads.cl2
+sPut F:\Info\Java\NewWorkspace\CCL\CclJars\test.txt
 reserve Stream
 load java
 putS cpa.subos.io.IO
@@ -70,44 +70,37 @@ invoke 1
 get nextLine
 store
 oldscope
-reserve Thread
-pop
-newscope
-reserve r
+reserve File
 load java
-putS java.lang.Runnable
+putS cpa.subos.io.IO
 invoke 1
+get file
 store
-reserve t
-load java
-putS java.lang.Thread
+load a
+load array
+load File
+putS test.txt
 invoke 1
-store
-reserve T
-putM __T_1__.cl0
-store
-load Thread
-load T
-store
-oldscope
-reserve calcThread
-putM __calcThread_2__.cl0
-store
-reserve outThread
-putM __outThread_3__.cl0
-store
-load Thread
-load calcThread
-putS CalcThread
-invoke 2
-get start
+get stream
 invoke 0
-pop
-load Thread
-load outThread
-putS OutThread
+invoke 1
+store
+load stdout
+get write
+get for
+putM _anon0_.cl0
+get for
+putI 0
+load a
+get length
+invoke 0
+get sub
+putI 1
+invoke 1
 invoke 2
-get start
+invoke 1
+pop
+load println
 invoke 0
 pop
 sPop

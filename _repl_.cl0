@@ -1,9 +1,0 @@
-sPut _repl_.cl2
-load java
-putS java.lang.System
-invoke 1
-get exit
-putI 0
-invoke 1
-ret
-sPop
