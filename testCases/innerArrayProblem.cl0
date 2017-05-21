@@ -1,4 +1,14 @@
 sPut testCases\innerArrayProblem.cl2
+reserve Stream
+load java
+putS cpa.subos.io.IO
+invoke 1
+get stream
+store
+reserve stdin
+pop
+reserve stdout
+pop
 reserve println
 pop
 reserve printf
@@ -14,7 +24,30 @@ putS java.lang.System
 invoke 1
 store
 load System
+reserve in
+pop
+duplicate
+get in
+load in
+store1
+reserve out
+pop
+duplicate
 get out
+load out
+store1
+pop
+load stdin
+load Stream
+load in
+invoke 1
+store
+load stdout
+load Stream
+load out
+invoke 1
+store
+load out
 duplicate
 get println
 load println
@@ -32,8 +65,7 @@ load read
 load java
 putS java.util.Scanner
 invoke 1
-load System
-get in
+load in
 invoke 1
 get nextLine
 store
