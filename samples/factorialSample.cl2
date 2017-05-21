@@ -1,6 +1,11 @@
 #include <Console>
-#include <syntax/shortDef>
 
-def factorial(arg) = <x|x>.for(1,arg).push(1)*;
+def factorial(i){
+    if(i){
+        1
+    }else{
+        i * factorial(i - 1)
+    }
+}
 
 println(factorial(6));
