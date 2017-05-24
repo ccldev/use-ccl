@@ -12,10 +12,10 @@ var XYSeries;
 			s.setName(name);
 			<i|s.getData().add(jData(xd[i], yd[i]))>
 				.for(0,xd.length()-1);
-			return s;
+			s
 		}
 		
-		return makeSeries(jSeries,jData,name,xData,yData);
+		makeSeries(jSeries,jData,name,xData,yData)
 	}
 	XYSeries = Series.bind(XYChart.Series, XYChart.Data);
 }

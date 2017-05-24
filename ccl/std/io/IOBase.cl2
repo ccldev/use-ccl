@@ -1,20 +1,20 @@
 def IOBase(this){
 	
 	def downloadFrom(downloadFromUrl){
-		return this.writer().for(downloadFromUrl.stream());
+		this.writer().for(downloadFromUrl.stream())
 	}
 	
 	def stream(filter:<v|v>){
 		var streamReader = this.reader();
 		if(streamReader.type == "error"){
-			return streamReader;
+			streamReader
 		}
 		var i;
 		var r = [];
 		while(true){
 			i = streamReader();
 			if(i == -1){
-				return r;
+				r
 			}else{
 				r.push(filter(i));
 			}
@@ -23,15 +23,15 @@ def IOBase(this){
 	
 	def writeString(rawString, format:"ASCII"){
 		this.writer().for(array(rawString.getBytes(format)));
-		return this;
+		this
 	}
 	
 	def writeFormattedString(format, rawString){
-		return this.writeString(rawString, format);
+		this.writeString(rawString, format)
 	}
 	
 	def buildString(format:"ASCII"){
-		return java("java.lang.String")(byte.for(this.stream()), format);
+		java("java.lang.String")(byte.for(this.stream()), format)
 	}
 	
 	this.push(downloadFrom, "downloadFrom");

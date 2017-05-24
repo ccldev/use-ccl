@@ -1,0 +1,31 @@
+sPut __sub_3__.cl2
+reserve parameters
+load @
+store
+reserve b
+load parameters
+get getOrDefault
+putI 0
+load undefined
+invoke 2
+store
+load Vector2
+load this
+get x
+load sub
+get bind
+invoke1 1
+load b
+get x
+invoke 1
+load this
+get y
+load sub
+get bind
+invoke1 1
+load b
+get y
+invoke 1
+invoke 2
+ret
+sPop

@@ -1,6 +1,6 @@
 #include <Console>
 
-if( boolean(read()) ){
+if(read()){
     println("Yay, true!");
 }else{
     println("Oh, not true...");

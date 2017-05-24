@@ -81,7 +81,9 @@ store
 load println
 load point
 get x
-get add
+load add
+get bind
+invoke1 1
 load point
 get y
 invoke 1

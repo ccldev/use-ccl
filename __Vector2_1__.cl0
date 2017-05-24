@@ -1,0 +1,59 @@
+sPut __Vector2_1__.cl2
+reserve parameters
+load @
+store
+reserve x
+load parameters
+get getOrDefault
+putI 0
+load undefined
+invoke 2
+store
+reserve y
+load parameters
+get getOrDefault
+putI 1
+load undefined
+invoke 2
+store
+reserve this
+putA
+get push
+load x
+putS x
+invoke 2
+get push
+load y
+putS y
+invoke 2
+store
+reserve add
+putM __add_2__.cl0
+store
+reserve sub
+putM __sub_3__.cl0
+store
+reserve mul
+putM __mul_4__.cl0
+store
+load this
+get push
+load add
+putS add
+invoke 2
+pop
+load this
+get push
+load sub
+putS sub
+invoke 2
+pop
+load this
+get push
+load mul
+putS mul
+invoke 2
+pop
+load this
+ret
+sPop

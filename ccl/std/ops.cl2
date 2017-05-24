@@ -1,15 +1,20 @@
-#defop + add
-#defop - sub
-#defop * mul
-#defop / div
-#defop % mod
+#alias + add
+#alias - sub
+#alias * mul
+#alias / div
+#alias % mod
 
-#defop ^ pow
+#alias ^ pow
 
-#defop < lss
-#defop > gtr
-#defop == equals
-#defop ! not
+#alias < lss
+#alias > gtr
+#alias == equals
+#alias ! not
 
-#defop => nvp
-#defop & concat
+#alias => nvp
+#alias & concat
+
+
+//Constants
+#alias true 1
+#alias false 0

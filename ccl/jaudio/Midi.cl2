@@ -9,7 +9,7 @@
         var channels = array(synth.getChannels());
         channels.push(synth, "native");
         
-        return channels;
+        channels
     }
     
     Audio.push([

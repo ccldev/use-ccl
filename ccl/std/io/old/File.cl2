@@ -5,15 +5,15 @@ def File(filePath){
 	var this = [java:java("java.io.File")(filePath)];
 
 	def writer(){
-		return java("java.io.FileOutputStream")(this.java).write;
+		java("java.io.FileOutputStream")(this.java).write
 	}
 
 	def reader(){
-		return java("java.io.FileInputStream")(this.java).read;
+		java("java.io.FileInputStream")(this.java).read
 	}
 
 	def toUrl(){
-		return this.java.toURI().toURL().toExternalForm();
+		this.java.toURI().toURL().toExternalForm()
 	}
 
 	this.push(writer, "writer");
@@ -26,7 +26,7 @@ def File(filePath){
 	this.push(this.java.mkdirs, "createDirectory");
 	this.push(this.java.createNewFile, "createFile");
 
-	return this;
+	this;
 
 }
 

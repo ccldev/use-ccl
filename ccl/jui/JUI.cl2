@@ -7,46 +7,46 @@ var JUI;
 		if(ret.type == "error"){
 			ret = old(name);
 			defaults.push(ret, name);
-			return ret;
+			ret
 		}
-		return ret;
+		ret
 	}
 	
 	//Layout
 	def layout(name){
-		return java("javafx.scene.layout.".concat(name));
+		java("javafx.scene.layout.".concat(name))
 	}
 	layout = new.bind(layout._, []);
 	
 	
 	//Control
 	def control(name){
-		return java("javafx.scene.control.".concat(name));
+		java("javafx.scene.control.".concat(name))
 	}
 	control = new.bind(control._, []);
 	
 	//Search
 	def search(name){
-		return java("io.github.coalangsoft.jsearchfx.ui.".concat(name));
+		java("io.github.coalangsoft.jsearchfx.ui.".concat(name))
 	}
 	search = new.bind(search._, []);
 	
 	//Image
 	def image(name){
-		return java("javafx.scene.image.".concat(name));
+		java("javafx.scene.image.".concat(name))
 	}
 	image = new.bind(image._, []);
 	
 	//Media
 	def media(name){
-		return java("javafx.scene.media.".concat(name));
+		java("javafx.scene.media.".concat(name))
 	}
 	media = new.bind(media._, []);
 	
 	def EventHandler(clss, func){
-		return clss([
+		clss([
 			handle:func
-		]);
+		])
 	}
 	
 	JUI = [

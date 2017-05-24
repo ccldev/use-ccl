@@ -1,0 +1,25 @@
+sPut __launch_2__.cl2
+reserve parameters
+load @
+store
+reserve App
+load parameters
+get getOrDefault
+putI 0
+load undefined
+invoke 2
+store
+reserve func
+load parameters
+get getOrDefault
+putI 1
+load undefined
+invoke 2
+store
+reserve args
+load parameters
+get getOrDefault
+putI 2
+putA
+invoke 2
+store

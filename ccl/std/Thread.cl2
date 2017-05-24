@@ -10,9 +10,9 @@ var Thread;
 			])
 		);
 		ret.setName(name);
-		return [
+		[
 			start:ret.start
-		];
+		]
 	}
 	
 	Thread = T;

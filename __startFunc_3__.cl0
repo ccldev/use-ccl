@@ -1,0 +1,23 @@
+sPut __startFunc_3__.cl2
+reserve parameters
+load @
+store
+reserve old
+load parameters
+get getOrDefault
+putI 0
+load undefined
+invoke 2
+store
+reserve stage
+load parameters
+get getOrDefault
+putI 1
+load undefined
+invoke 2
+store
+reserve dnd
+load java
+putS io.github.coalangsoft.dragdropfx.DragDropFX
+invoke 1
+store

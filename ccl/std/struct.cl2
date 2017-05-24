@@ -10,10 +10,10 @@ def struct(array){
 			ret.push(parameters.get(i), array.get(i));
 		}
 		
-		return ret;
+		ret
 		
 	}
 	
-	return retFunc;
+	retFunc
     
 }

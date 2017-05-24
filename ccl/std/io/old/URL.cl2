@@ -4,12 +4,12 @@ def URL(rawUrl){
 	var this = [java:java("java.net.URL")(rawUrl)];
 
 	def reader(){
-		return this.java.openStream().read;
+	    this.java.openStream().read
 	}
 
 	this.push(reader, "reader");
 
-	return this;
+	this
 }
 
 URL = URL.extend(IOBase);

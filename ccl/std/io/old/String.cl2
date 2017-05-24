@@ -4,38 +4,38 @@ def String(){
 	var this = [list:[], index:0];
 
 	def writer(){
-		return this.list.push;
+		this.list.push
 	}
 
 	def charAt(index){
 		var d = this.list[index];
 		if(d.type == "error"){
-			return -1;
+			-1
 		}else{
-			return d;
+			d
 		}
 	}
 
 	def rf(){
 		if(this.list.length() == this.index){
-			return -1;
+			-1
 		}
 		var c = char2int(
 			this.charAt(this.index)
 		);
 		this.setProperty("index", this.index + 1);
-		return c;
+		c
 	}
 
 	def reader(){
-		return rf;
+		rf
 	}
 
 	this.push(writer, "writer");
 	this.push(charAt, "charAt");
 	this.push(reader, "reader");
 
-	return this;
+	this
 }
 
 String = String.extend(IOBase);

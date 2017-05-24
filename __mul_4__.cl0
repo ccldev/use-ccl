@@ -1,0 +1,44 @@
+sPut __mul_4__.cl2
+reserve parameters
+load @
+store
+reserve b
+load parameters
+get getOrDefault
+putI 0
+load undefined
+invoke 2
+store
+load if
+load b
+get type
+load equals
+get bind
+invoke1 1
+putS number
+invoke 1
+invoke 1
+putM _i0_.cl0
+load undefined
+invoke 2
+nnr
+load Vector2
+load this
+get x
+load mul
+get bind
+invoke1 1
+load b
+get x
+invoke 1
+load this
+get y
+load mul
+get bind
+invoke1 1
+load b
+get y
+invoke 1
+invoke 2
+ret
+sPop
