@@ -1,1 +1,0 @@
-Vector2(this.x * b, this.y * b)

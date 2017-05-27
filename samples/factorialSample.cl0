@@ -1,4 +1,3 @@
-sPut samples/factorialSample.cl2
 reserve Stream
 load java
 putS cpa.subos.io.IO
@@ -79,4 +78,3 @@ putI 6
 invoke 1
 invoke 1
 pop
-sPop

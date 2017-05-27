@@ -1,4 +1,3 @@
-sPut samples/elseSample.cl2
 reserve Stream
 load java
 putS cpa.subos.io.IO
@@ -71,13 +70,10 @@ get nextLine
 store
 oldscope
 load if
-load boolean
 load read
 invoke 0
-invoke 1
 invoke 1
 putM _i0_.cl0
 putM _e0_.cl0
 invoke 2
 nnr
-sPop

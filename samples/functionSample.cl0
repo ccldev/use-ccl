@@ -1,4 +1,3 @@
-sPut samples/functionSample.cl2
 reserve Stream
 load java
 putS cpa.subos.io.IO
@@ -76,4 +75,3 @@ store
 load printHello
 invoke 0
 pop
-sPop

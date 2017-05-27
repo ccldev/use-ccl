@@ -1,4 +1,3 @@
-sPut samples/propertySample.cl2
 reserve Stream
 load java
 putS cpa.subos.io.IO
@@ -108,4 +107,3 @@ invoke 1
 putM _w0_.cl0
 invoke 1
 nnr
-sPop

@@ -1,4 +1,3 @@
-sPut samples/threads.cl2
 reserve Stream
 load java
 putS cpa.subos.io.IO
@@ -110,4 +109,3 @@ invoke 2
 get start
 invoke 0
 pop
-sPop

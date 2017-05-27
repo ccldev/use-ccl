@@ -1,4 +1,3 @@
-sPut samples/castSample.cl2
 reserve Stream
 load java
 putS cpa.subos.io.IO
@@ -90,7 +89,7 @@ invoke 1
 pop
 load println
 load boolean
-putS ljöhn
+putS lj??hn
 invoke 1
 invoke 1
 pop
@@ -101,4 +100,3 @@ invoke 1
 get type
 invoke 1
 pop
-sPop

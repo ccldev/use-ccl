@@ -1,4 +1,3 @@
-sPut samples/defaultParamSample.cl2
 reserve Stream
 load java
 putS cpa.subos.io.IO
@@ -100,4 +99,3 @@ putS Susi
 putS Hi \
 invoke 2
 pop
-sPop

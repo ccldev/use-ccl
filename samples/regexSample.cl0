@@ -1,4 +1,3 @@
-sPut samples/regexSample.cl2
 reserve Stream
 load java
 putS cpa.subos.io.IO
@@ -79,4 +78,3 @@ load println
 load r
 invoke 1
 pop
-sPop

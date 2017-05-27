@@ -1,4 +1,3 @@
-sPut samples/lookupSample.cl2
 reserve Stream
 load java
 putS cpa.subos.io.IO
@@ -89,14 +88,14 @@ putA
 get push
 load Name
 putS Hans
-putS Müller
+putS M??ller
 invoke 2
 putS hans
 invoke 2
 get push
 load Name
 putS Susi
-putS Müller
+putS M??ller
 invoke 2
 putS susi
 invoke 2
@@ -118,4 +117,3 @@ load println
 load lookup
 invoke 1
 pop
-sPop

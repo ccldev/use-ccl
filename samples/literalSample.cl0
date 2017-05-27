@@ -1,4 +1,3 @@
-sPut samples/literalSample.cl2
 reserve Stream
 load java
 putS cpa.subos.io.IO
@@ -74,22 +73,12 @@ reserve List
 putM __List_1__.cl0
 store
 reserve myList
-load List
-putA
-get push
-putI 1
-invoke 1
-get push
-putI 3
-invoke 1
-get push
-putI 2
-invoke 1
-invoke 1
+load |1
+load ,3,2|
+invoke1 1
 store
 load println
 load myList
 get data
 invoke 1
 pop
-sPop

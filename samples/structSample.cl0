@@ -1,4 +1,3 @@
-sPut samples/structSample.cl2
 reserve Stream
 load java
 putS cpa.subos.io.IO
@@ -90,7 +89,7 @@ store
 reserve hans
 load Person
 putS Hans
-putS Müller
+putS M??ller
 putI 30
 invoke 3
 store
@@ -104,4 +103,3 @@ load hans
 get lastName
 invoke 1
 pop
-sPop

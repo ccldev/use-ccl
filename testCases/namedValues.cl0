@@ -1,4 +1,3 @@
-sPut testCases\namedValues.cl2
 reserve Stream
 load java
 putS cpa.subos.io.IO
@@ -88,4 +87,3 @@ load func
 load array
 invoke 1
 pop
-sPop

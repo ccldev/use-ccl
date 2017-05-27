@@ -1,4 +1,3 @@
-sPut testCases\primitives.cl2
 reserve Stream
 load java
 putS cpa.subos.io.IO
@@ -108,4 +107,3 @@ invoke 0
 get type
 invoke 1
 pop
-sPop

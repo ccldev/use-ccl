@@ -1,4 +1,3 @@
-sPut samples/handleErrors.cl2
 reserve Stream
 load java
 putS cpa.subos.io.IO
@@ -83,7 +82,9 @@ store
 load if
 load working
 get type
-get equals
+load equals
+get bind
+invoke1 1
 putS error
 invoke 1
 invoke 1
@@ -98,7 +99,9 @@ store
 load if
 load err
 get type
-get equals
+load equals
+get bind
+invoke1 1
 putS error
 invoke 1
 invoke 1
@@ -106,4 +109,3 @@ putM _i1_.cl0
 load undefined
 invoke 2
 nnr
-sPop
