@@ -1,2 +1,2 @@
 github coalang-soft CoaStandardLib
-dir-copy ./CoaStandardLib ./use-ccl/ccl
+dir-copy ./CoaStandardLib ./use-ccl
