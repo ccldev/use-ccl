@@ -1,1 +1,0 @@
-var URL = java("cpa.subos.io.IO").url;
