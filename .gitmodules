@@ -1,3 +1,0 @@
-[submodule "ccl"]
-	path = ccl
-	url = https://github.com/coalang-soft/CoaStandardLib
