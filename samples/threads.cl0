@@ -1,111 +1,44 @@
-reserve Stream
 load java
 putS cpa.subos.io.IO
-invoke 1
+__invoke1
 get stream
-store
-reserve stdin
-pop
-reserve stdout
-pop
-reserve println
-pop
-reserve printf
-pop
-reserve print
-pop
-reserve read
-pop
-newscope
-reserve System
-load java
-putS java.lang.System
-invoke 1
-store
-load System
-reserve in
-pop
+__mkvar Stream
+__mkvar_u stdin
+__mkvar_u stdout
+__mkvar_u println
+__mkvar_u printf
+__mkvar_u print
+__mkvar_u read
+putM _nblock_1_.cl0
 duplicate
-get in
-load in
-store1
-reserve out
+__invoke0
+nnr
 pop
+__mkvar_u Thread
+putM _nblock_2_.cl0
 duplicate
-get out
-load out
-store1
+__invoke0
+nnr
 pop
-load stdin
-load Stream
-load in
-invoke 1
-store
-load stdout
-load Stream
-load out
-invoke 1
-store
-load out
-duplicate
-get println
-load println
-store1
-duplicate
-get printf
-load printf
-store1
-duplicate
-get print
-load print
-store1
+putM _nblock_4_.cl0
+__mkvar calcThread
+load undefined
 pop
-load read
-load java
-putS java.util.Scanner
-invoke 1
-load in
-invoke 1
-get nextLine
-store
-oldscope
-reserve Thread
+putM _nblock_5_.cl0
+__mkvar outThread
+load undefined
 pop
-newscope
-reserve r
-load java
-putS java.lang.Runnable
-invoke 1
-store
-reserve t
-load java
-putS java.lang.Thread
-invoke 1
-store
-reserve T
-putM __T_1__.cl0
-store
-load Thread
-load T
-store
-oldscope
-reserve calcThread
-putM __calcThread_2__.cl0
-store
-reserve outThread
-putM __outThread_3__.cl0
-store
 load Thread
 load calcThread
 putS CalcThread
-invoke 2
+__invoke2
 get start
-invoke 0
+__invoke0
 pop
 load Thread
 load outThread
 putS OutThread
-invoke 2
+__invoke2
 get start
-invoke 0
+__invoke0
 pop

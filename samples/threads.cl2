@@ -3,29 +3,24 @@
 
 def calcThread(){
 	thread.waitFor("OutThread");
-	var i = 0;
-	while(i < 100){
-		var res = i / 2;
+	for(0,100){
+		var res = @.0 / 2;
 		res = res * res;
 		thread.write(
 			"OutThread",
-			"i".concat(integer(i).toString()),
+			"i" & integer(@.0).toString(),
 			res);
 //		thread.sleep(1000);
-		i = i + 1;
 	}
 }
 def outThread(){
-	var i = 0;
-	while(i < 100){
-		var name = "i".concat(integer(i).toString());
-		while(thread.find(name)!){
+	for(0,100){
+		var name = "i" & integer(@.0).toString();
+		while({||return thread.find(name)!;}){
 			//Wait for next result...
 		}
 		
 		println(thread.read(name));
-		
-		i = i + 1;
 	}
 }
 

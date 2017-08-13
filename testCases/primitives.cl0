@@ -1,82 +1,26 @@
-reserve Stream
 load java
 putS cpa.subos.io.IO
-invoke 1
+__invoke1
 get stream
-store
-reserve stdin
-pop
-reserve stdout
-pop
-reserve println
-pop
-reserve printf
-pop
-reserve print
-pop
-reserve read
-pop
-newscope
-reserve System
-load java
-putS java.lang.System
-invoke 1
-store
-load System
-reserve in
-pop
+__mkvar Stream
+__mkvar_u stdin
+__mkvar_u stdout
+__mkvar_u println
+__mkvar_u printf
+__mkvar_u print
+__mkvar_u read
+putM _nblock_1_.cl0
 duplicate
-get in
-load in
-store1
-reserve out
+__invoke0
+nnr
 pop
-duplicate
-get out
-load out
-store1
-pop
-load stdin
-load Stream
-load in
-invoke 1
-store
-load stdout
-load Stream
-load out
-invoke 1
-store
-load out
-duplicate
-get println
-load println
-store1
-duplicate
-get printf
-load printf
-store1
-duplicate
-get print
-load print
-store1
-pop
-load read
-load java
-putS java.util.Scanner
-invoke 1
-load in
-invoke 1
-get nextLine
-store
-oldscope
-reserve point
 load java
 putS java.awt.Point
-invoke 1
+__invoke1
 putI 1
 putI 2
-invoke 2
-store
+__invoke2
+__mkvar point
 load println
 load point
 get x
@@ -85,25 +29,24 @@ get bind
 invoke1 1
 load point
 get y
-invoke 1
-invoke 1
+__invoke1
+__invoke1
 pop
-reserve dimension
 load java
 putS java.awt.Dimension
-invoke 1
+__invoke1
 putI 800
 putI 600
-invoke 2
-store
+__invoke2
+__mkvar dimension
 load println
 putS Following output should be number
-invoke 1
+__invoke1
 pop
 load println
 load dimension
 get getWidth
-invoke 0
+__invoke0
 get type
-invoke 1
+__invoke1
 pop

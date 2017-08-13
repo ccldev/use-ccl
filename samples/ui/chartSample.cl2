@@ -3,7 +3,7 @@
 
 def start(stage){	
 	stage.setScene(JUI.Scene(
-		SimpleChart(<x|x>,<y|y * y>,100)
+		SimpleChart({|x|return x;},{|y|return y * y;},100)
 	));
 	stage.show();
 }

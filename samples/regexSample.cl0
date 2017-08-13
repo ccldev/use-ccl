@@ -1,80 +1,24 @@
-reserve Stream
 load java
 putS cpa.subos.io.IO
-invoke 1
+__invoke1
 get stream
-store
-reserve stdin
-pop
-reserve stdout
-pop
-reserve println
-pop
-reserve printf
-pop
-reserve print
-pop
-reserve read
-pop
-newscope
-reserve System
-load java
-putS java.lang.System
-invoke 1
-store
-load System
-reserve in
-pop
+__mkvar Stream
+__mkvar_u stdin
+__mkvar_u stdout
+__mkvar_u println
+__mkvar_u printf
+__mkvar_u print
+__mkvar_u read
+putM _nblock_1_.cl0
 duplicate
-get in
-load in
-store1
-reserve out
+__invoke0
+nnr
 pop
-duplicate
-get out
-load out
-store1
-pop
-load stdin
-load Stream
-load in
-invoke 1
-store
-load stdout
-load Stream
-load out
-invoke 1
-store
-load out
-duplicate
-get println
-load println
-store1
-duplicate
-get printf
-load printf
-store1
-duplicate
-get print
-load print
-store1
-pop
-load read
-load java
-putS java.util.Scanner
-invoke 1
-load in
-invoke 1
-get nextLine
-store
-oldscope
-reserve r
 load regex
 putS Ich bin ([a-zA-Z]+)
-invoke 1
-store
+__invoke1
+__mkvar r
 load println
 load r
-invoke 1
+__invoke1
 pop

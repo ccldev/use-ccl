@@ -1,24 +1,22 @@
-reserve System
 load java
 putS java.lang.System
-invoke 1
-store
-reserve in
+__invoke1
+__mkvar System
 load java
 putS java.util.Scanner
-invoke 1
+__invoke1
 load System
 get in
-invoke 1
+__invoke1
 get nextLine
-invoke 0
-store
+__invoke0
+__mkvar in
 load System
 get out
 get println
 putS Eingabe\:\t
 get concat
 load in
-invoke 1
-invoke 1
+__invoke1
+__invoke1
 pop

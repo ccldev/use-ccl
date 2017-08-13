@@ -1,101 +1,48 @@
-reserve Stream
 load java
 putS cpa.subos.io.IO
-invoke 1
+__invoke1
 get stream
-store
-reserve stdin
-pop
-reserve stdout
-pop
-reserve println
-pop
-reserve printf
-pop
-reserve print
-pop
-reserve read
-pop
-newscope
-reserve System
-load java
-putS java.lang.System
-invoke 1
-store
-load System
-reserve in
-pop
+__mkvar Stream
+__mkvar_u stdin
+__mkvar_u stdout
+__mkvar_u println
+__mkvar_u printf
+__mkvar_u print
+__mkvar_u read
+putM _nblock_1_.cl0
 duplicate
-get in
-load in
-store1
-reserve out
+__invoke0
+nnr
 pop
-duplicate
-get out
-load out
-store1
+putM _nblock_2_.cl0
+__mkvar normal
+load undefined
 pop
-load stdin
-load Stream
-load in
-invoke 1
-store
-load stdout
-load Stream
-load out
-invoke 1
-store
-load out
-duplicate
-get println
-load println
-store1
-duplicate
-get printf
-load printf
-store1
-duplicate
-get print
-load print
-store1
+putM _nblock_3_.cl0
+__mkvar withDefaults
+load undefined
 pop
-load read
-load java
-putS java.util.Scanner
-invoke 1
-load in
-invoke 1
-get nextLine
-store
-oldscope
-reserve normal
-putM __normal_1__.cl0
-store
-reserve withDefaults
-putM __withDefaults_2__.cl0
-store
 load normal
-invoke 0
+__invoke0
 pop
 load normal
 putI 1
-invoke 1
+__invoke1
 pop
 load normal
 putI 1
 putI 2
-invoke 2
+__invoke2
 pop
 load withDefaults
-invoke 0
+__invoke0
 pop
 load withDefaults
 putS Hans
-invoke 1
+__invoke1
 pop
 load withDefaults
 putS Susi
 putS Hi \
-invoke 2
+__invoke2
 pop

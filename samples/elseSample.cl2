@@ -1,7 +1,7 @@
 #include <Console>
 
-if(read()){
+[{||
+    println("Oh, not true..");
+},{||
     println("Yay, true!");
-}else{
-    println("Oh, not true...");
-}
+}][boolean(read())]();

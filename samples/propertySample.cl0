@@ -1,109 +1,52 @@
-reserve Stream
 load java
 putS cpa.subos.io.IO
-invoke 1
+__invoke1
 get stream
-store
-reserve stdin
-pop
-reserve stdout
-pop
-reserve println
-pop
-reserve printf
-pop
-reserve print
-pop
-reserve read
-pop
-newscope
-reserve System
-load java
-putS java.lang.System
-invoke 1
-store
-load System
-reserve in
-pop
+__mkvar Stream
+__mkvar_u stdin
+__mkvar_u stdout
+__mkvar_u println
+__mkvar_u printf
+__mkvar_u print
+__mkvar_u read
+putM _nblock_1_.cl0
 duplicate
-get in
-load in
-store1
-reserve out
+__invoke0
+nnr
 pop
-duplicate
-get out
-load out
-store1
-pop
-load stdin
-load Stream
-load in
-invoke 1
-store
-load stdout
-load Stream
-load out
-invoke 1
-store
-load out
-duplicate
-get println
-load println
-store1
-duplicate
-get printf
-load printf
-store1
-duplicate
-get print
-load print
-store1
-pop
-load read
-load java
-putS java.util.Scanner
-invoke 1
-load in
-invoke 1
-get nextLine
-store
-oldscope
-reserve struct
-putM __struct_1__.cl0
-store
-reserve Number
+putM _nblock_2_.cl0
+__mkvar struct
 load struct
 putA
-get push
 putS vorwahl
-invoke 1
-get push
+__arrpush1
 putS haupt
-invoke 1
-invoke 1
-store
-reserve num
+__arrpush1
+__invoke1
+__mkvar Number
 load Number
 putS 12345
 putS 67890
-invoke 2
-store
-reserve props
+__invoke2
+__mkvar num
 load num
 get properties
-store
-reserve String
+__mkvar props
 load java
 putS java.lang.String
-invoke 1
-store
-reserve i
+__invoke1
+__mkvar String
+load for
 putI 0
-store
-load while
-putM _lc0_.cl0
-invoke 1
-putM _w0_.cl0
-invoke 1
-nnr
+load props
+get length
+__invoke0
+load sub
+get bind
+invoke1 1
+putI 1
+__invoke1
+__invoke2
+putM _b1_.cl0
+__invoke1
+nnr2

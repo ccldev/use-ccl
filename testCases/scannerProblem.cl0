@@ -1,24 +1,19 @@
-reserve System
 load java
 putS java.lang.System
-invoke 1
-store
-reserve Scanner
+__invoke1
+__mkvar System
 load java
 putS java.util.Scanner
-invoke 1
-store
-reserve scanner
+__invoke1
+__mkvar Scanner
 load Scanner
 load System
 get in
-invoke 1
-store
-reserve read
+__invoke1
+__mkvar scanner
 load scanner
 get nextLine
-store
-reserve test
+__mkvar read
 load read
-invoke 0
-store
+__invoke0
+__mkvar test

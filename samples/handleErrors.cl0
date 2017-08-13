@@ -1,84 +1,28 @@
-reserve Stream
 load java
 putS cpa.subos.io.IO
-invoke 1
+__invoke1
 get stream
-store
-reserve stdin
-pop
-reserve stdout
-pop
-reserve println
-pop
-reserve printf
-pop
-reserve print
-pop
-reserve read
-pop
-newscope
-reserve System
-load java
-putS java.lang.System
-invoke 1
-store
-load System
-reserve in
-pop
+__mkvar Stream
+__mkvar_u stdin
+__mkvar_u stdout
+__mkvar_u println
+__mkvar_u printf
+__mkvar_u print
+__mkvar_u read
+putM _nblock_1_.cl0
 duplicate
-get in
-load in
-store1
-reserve out
+__invoke0
+nnr
 pop
-duplicate
-get out
-load out
-store1
-pop
-load stdin
-load Stream
-load in
-invoke 1
-store
-load stdout
-load Stream
-load out
-invoke 1
-store
-load out
-duplicate
-get println
-load println
-store1
-duplicate
-get printf
-load printf
-store1
-duplicate
-get print
-load print
-store1
-pop
-load read
-load java
-putS java.util.Scanner
-invoke 1
-load in
-invoke 1
-get nextLine
-store
-oldscope
 load println
 putS Expected\: error output.
-invoke 1
+__invoke1
 pop
-reserve working
 putI 1
 get add
 putI 5
-invoke 1
-store
+__invoke1
+__mkvar working
 load if
 load working
 get type
@@ -86,16 +30,15 @@ load equals
 get bind
 invoke1 1
 putS error
-invoke 1
-invoke 1
-putM _i0_.cl0
-load undefined
-invoke 2
-nnr
-reserve err
+__invoke1
+__invoke1
+putM _b0_.cl0
+__invoke1
+nnr2
+pop
 load undefined
 get someProperty
-store
+__mkvar err
 load if
 load err
 get type
@@ -103,9 +46,8 @@ load equals
 get bind
 invoke1 1
 putS error
-invoke 1
-invoke 1
-putM _i1_.cl0
-load undefined
-invoke 2
-nnr
+__invoke1
+__invoke1
+putM _b1_.cl0
+__invoke1
+nnr2

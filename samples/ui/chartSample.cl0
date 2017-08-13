@@ -1,0 +1,13 @@
+putM _nblock_26_.cl0
+__mkvar Launcher
+putM _nblock_1_.cl0
+__mkvar start
+load undefined
+pop
+load Launcher
+__invoke0
+get launch
+load start
+putA
+__invoke2
+pop

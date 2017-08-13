@@ -10,10 +10,8 @@ var num = Number("12345", "67890");
 var props = num.properties;
 var String = java("java.lang.String");
 
-var i = 0;
-while(i < props.length()){
-	var toGet = props.get(i);
-	var value = num(toGet);
-	println(String.valueOf(toGet).concat("\:\t").concat(String.valueOf(value)));
-	i = i + 1;
+for(0,props.length() - 1){
+	var toGet = props.get(@.0);
+	var value = num[toGet];
+	println(String.valueOf(toGet) & ":\t" & String.valueOf(value));
 }
